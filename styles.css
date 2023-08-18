@@ -1,0 +1,430 @@
+:root {
+  --main-font: "Open Sans", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+
+  /* text coloros*/
+  --accent-cl: #ff6c00;
+  --white-cl: #ffffff;
+  --main-text-cl: #555;
+  --btn-mode-light-cl: #303030;
+  /* --secondary-text_cl:; */
+
+  /* bacground coloros*/
+  /* --main-bg-cl:; */
+  --secondary-bg-cl: #f7f7f7;
+  --dark-bg-cl: #191c26;
+}
+
+body {
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 1.86; /* 185.714% */
+  letter-spacing: 0.28px;
+
+  color: var(--main-text-cl);
+}
+
+li {
+  list-style: none;
+}
+
+.link {
+  color: currentColor;
+  text-decoration: none;
+}
+
+.btn {
+  font-family: inherit;
+
+  width: 160px;
+  height: 40px;
+  flex-shrink: 0;
+
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.08px;
+  text-transform: uppercase;
+
+  background-color: transparent;
+}
+
+.btn:hover,
+.btn:focus {
+  color: var(--white-cl);
+  background: var(--accent-cl);
+}
+
+.btn-mode-light {
+  color: var(--btn-mode-light-cl);
+  border: 1px solid #ff6c00;
+  border-radius: 25px;
+}
+
+.btn-mode-dark {
+  border-radius: 25px;
+  color: var(--white-cl);
+  border: 1px solid var(--accent-cl);
+}
+
+/* 
+================================
+| Header section 
+================================
+*/
+
+.header {
+  background-color: #191c26;
+}
+
+.navigation-link,
+.header-phone {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 1.2px;
+
+  color: var(--white-cl);
+}
+
+/* 
+================================
+| Hervo section
+================================
+*/
+
+.hero {
+  background-color: #191c26;
+}
+
+.hero .link {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.2px;
+
+  color: var(--btn-mode-light-cl);
+}
+
+.hero .link:hover,
+.hero .link:focus {
+  color: var(--accent-cl);
+}
+
+.hero .uppertitel {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.hero .title {
+  font-family: var(--secondary-font);
+  font-size: 72px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 3.6px;
+
+  color: var(--white-cl);
+}
+
+.hero .subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.66;
+  letter-spacing: 0.36px;
+
+  color: #9da4bd;
+}
+
+.slider-btn {
+  text-align: right;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.1px;
+
+  color: var(--white-cl);
+  background-color: transparent;
+}
+
+.slider-btn-disabl {
+  text-align: left;
+
+  color: rgba(157, 164, 189, 0.6);
+}
+
+/* 
+================================
+| About
+================================
+*/
+
+.about .uppertitel {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+
+  color: var(--btn-mode-light-cl);
+}
+
+.about .titel {
+  font-family: var(--secondary-font);
+  font-size: 42px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.1px;
+
+  color: var(--btn-mode-light-cl);
+}
+
+.about .subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.67;
+  letter-spacing: 0.36px;
+
+  color: var(--main-text-cl);
+}
+
+.about .description {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.86;
+  letter-spacing: 0.28px;
+
+  color: var(--main-text-cl);
+}
+
+/* 
+================================
+| Price
+================================
+*/
+.price {
+  background-color: var(--dark-bg-cl);
+}
+
+.price .uppertitle {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+
+  color: rgba(157, 164, 189, 0.6);
+}
+
+.price .titel {
+  font-family: var(--secondary-font);
+  font-size: 42px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.1px;
+
+  color: var(--white-cl);
+}
+
+.price .inner-list {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.67;
+  letter-spacing: 0.36px;
+
+  color: #9da4bd;
+}
+
+/* 
+================================
+| Benefits
+================================
+*/
+.benefits-amount {
+  text-align: center;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.1px;
+
+  color: var(--btn-mode-light-cl);
+}
+
+.benefits-amount-color {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+
+  color: var(--accent-cl);
+}
+
+.benefits-text {
+  text-align: center;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
+
+  color: var(--btn-mode-light-cl);
+}
+
+.benefits .uppertitel {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+
+  color: var(--btn-mode-light-cl);
+}
+
+.benefits .titel {
+  font-family: var(--secondary-font);
+  font-size: 42px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.1px;
+
+  color: var(--btn-mode-light-cl);
+}
+
+.benefits .subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.67;
+  letter-spacing: 0.36px;
+
+  color: var(--main-text-cl);
+}
+
+/* 
+================================
+| Team
+================================
+*/
+
+.team .uppertitle {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+
+  color: var(--btn-mode-light-cl);
+}
+
+.team .title {
+  font-family: var(--secondary-font);
+  font-size: 42px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.1px;
+
+  color: var(--btn-mode-light-cl);
+}
+
+.member-title {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.36px;
+
+  color: var(--btn-mode-light-cl);
+}
+
+.member-position {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.28px;
+
+  color: var(--accent-cl);
+}
+
+/* 
+================================
+| Gallery
+================================
+*/
+
+.gallery .uppertitel {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+
+  color: var(--btn-mode-light-cl);
+}
+
+/* 
+================================
+| Footer
+================================
+*/
+
+.footer {
+  background-color: var(--dark-bg-cl);
+}
+
+.footer .title {
+  font-family: var(--secondary-font);
+  font-size: 42px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.1px;
+
+  color: var(--white-cl);
+}
+
+.footer .link {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.2px;
+
+  color: var(--btn-mode-light-cl);
+}
+
+.form_name {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+
+  color: var(--white-cl);
+}
+
+.form_name_disubla {
+  color: rgba(157, 164, 189, 0.4);
+}
+
+.footer_title {
+  font-family: var(--secondary-font);
+  font-size: 42px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 2.1px;
+
+  color: var(--white-cl);
+}
+
+.footer-text-styles {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.67;
+  letter-spacing: 0.36px;
+
+  color: #9da4bd;
+}
+
+.copyright {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.2px;
+
+  color: #9da4bd;
+}
