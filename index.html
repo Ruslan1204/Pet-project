@@ -62,7 +62,11 @@
           <a class="link header-phone" href="tel:+380441111111"
             >+38 044 111 11 11</a
           >
-          <button class="btn btn-mode-dark header-button" type="button" data-modal-open>
+          <button
+            class="btn btn-mode-dark header-button"
+            type="button"
+            data-modal-open
+          >
             Online-booking
           </button>
 
@@ -452,50 +456,41 @@
         </div>
       </section>
       <section class="contacts section">
-        <!-- <div class="container contacts_container">
-          <form class="contacts_form">
-            <h2 class="title">Online-booking</h2>
-            <label class="form_name" for="Name*">
-              Name*
-              <input type="text" name="Name*" id="" />
-            </label>
-            <label class="form_name form_name_disubla" for="Phone*">
-              Phone*
-              <input type="phone" name="Phone*" id="" />
-            </label>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-            <button class="btn btn-mode-dark" type="button">send</button>
-          </form>
+        <div class="container">
+          <div class="contacts-left-side">
+            <h2 class="left-title">Online-booking</h2>
 
-          <address class="contacts__address">
-            <h2 class="contacts_title">Contacts</h2>
-            <ul class="contacts__link">
-              <li class="contacts__indent">
-                <a
-                  class="contacts-text-styles"
-                  href=""
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >st. Vasilkivska, 7A Kyiv, 08132</a
+            <form class="contacts-form" name="contacts-form">
+              <div class="contacts-wrapper">
+                <label class="form-group"
+                  ><input
+                    class="form-input"
+                    type="text"
+                    name="user-name"
+                  /><span class="form-label">Name*</span></label
                 >
-              </li>
-              <li class="contacts__indent">
-                <a class="contacts-text-styles" href="tel:+380441111111"
-                  >+38 044 111 11 11</a
+                <label class="form-group"
+                  ><input
+                    class="form-input"
+                    type="tel"
+                    name="user-phone"
+                  /><span class="form-label">Phone*</span></label
                 >
-              </li>
-              <li class="contacts__indent">
-                <a
-                  class="contacts-text-styles"
-                  href="mailto:barbershop@email.com"
-                  >barbershop@email.com</a
-                >
-              </li>
-            </ul>
-            <p>Working hours</p>
-            <p>Every day from 9:00 to 22:00</p>
-          </address>
-        </div> -->
+              </div>
+              <label class="form-message-group">
+                <textarea
+                  class="form-message"
+                  name="user-message"
+                  id=""
+                  rows="4"
+                ></textarea>
+                <span class="form-label">Message</span>
+              </label>
+              <button class="btn btn-mode-dark" type="submit">send</button>
+            </form>
+          </div>
+          <div class="contacts-right-side"></div>
+        </div>
       </section>
     </main>
     <footer class="footer section">
