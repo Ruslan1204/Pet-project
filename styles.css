@@ -209,6 +209,27 @@ img {
   color: var(--accent-cl);
 }
 
+.header-button {
+  animation: swing 10000ms ease-in-out infinite;
+}
+
+@keyframes swing {
+  0% {
+    transform: rotate(6deg);
+  }
+  4% {
+    transform: rotate(-6deg);
+  }
+  8% {
+    transform: rotate(3deg);
+  }
+  12% {
+    transform: rotate(-3deg);
+  }
+  16% {
+    transform: rotate(0deg);
+  } 
+}
 /* 
 ================================
 | Modal
@@ -223,12 +244,8 @@ img {
   width: 100%;
   height: 100%;
   background-color: rgb(0, 0, 0, 0.3);
-}
 
-.backgrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
+  transition: opacity 400ms, visibility 400ms;
 }
 
 .modal-wrapper {
@@ -241,6 +258,24 @@ img {
   background-color: var(--white-cl);
 
   border-radius: 15px;
+
+  transition: transform 300ms ease-in-out 200ms, opacity 300ms ease-in-out 200ms;
+}
+
+.backgrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  visibility: hidden;
+}
+
+.backgrop.is-hidden .modal-wrapper{
+  transform:  translate(-50%, -50%) scale(0.4);
+  opacity: 0;
+}
+
+.backgrop .modal-wrapper{
+  transform:  translate(-50%, -50%) scale(1);
+  opacity: 1;
 }
 
 .modal-btn {
@@ -338,7 +373,7 @@ img {
 
   color: rgba(157, 164, 189, 0.6);
 
-  animation: fade-bottom-to-top 1000ms;
+  animation: fade-bottom-to-top 1000ms ease-out;
 }
 
 .hero .uppertitle::before {
@@ -360,9 +395,8 @@ img {
 
   color: var(--white-cl);
 
-  animation: fade-left-to-right 1000ms;
+  animation: fade-left-to-right 1000ms ease-out;
 }
-
 
 .hero .subtitle {
   font-size: 18px;
@@ -372,7 +406,7 @@ img {
 
   color: #9da4bd;
 
-  animation: fade-bottom-to-top 1000ms;
+  animation: fade-bottom-to-top 1000ms ease-out;
 }
 
 @keyframes fade-left-to-right {
