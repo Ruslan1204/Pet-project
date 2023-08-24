@@ -254,7 +254,8 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 500px;
-  height: 400px;
+  padding:  25px;
+
   background-color: var(--white-cl);
 
   border-radius: 15px;
@@ -296,6 +297,30 @@ img {
 
   cursor: pointer;
 }
+
+.modal-title {
+  display: block; 
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: var(--btn-mode-light-cl);
+}
+
+.form-group,
+.form-type,
+.form-policy-group{
+  display: block;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* 
+================================
+| Modal form
+================================
+*/
+
 /* 
 ================================
 | Hervo section
@@ -1039,7 +1064,6 @@ img {
 }
 
 .contacts-wrapper {
-
   display: flex;
   align-items: center;
 
@@ -1074,15 +1098,18 @@ img {
 
   color: rgba(157, 164, 189, 0.4);
 
-
- 
   transform: translateY(20px);
   transition: transform 400ms ease-in-out;
 }
 
-.form-input:focus+.form-label{
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown) + .form-label {
   color: var(--white-cl);
   transform: translateY(0px);
+}
+
+.form-input {
+  padding: 5px;
 }
 
 .form-input,
@@ -1105,21 +1132,30 @@ img {
   border-bottom: 1px solid var(--white-cl);
 }
 
-.form-message {
-  width: 100%;
+.form-input::placeholder {
+  opacity: 0;
 }
- 
-.form-message-group{
+
+.form-message-group {
   position: relative;
   padding-top: 25px;
   margin-bottom: 44px;
 }
 
-.form-message:focus+.form-label{
+.form-message {
+  width: 100%;
+  padding: 5px;
+}
+
+.form-message::placeholder {
+  opacity: 0;
+}
+
+.form-message:focus + .form-label,
+.form-message:not(:placeholder-shown) + .form-label {
   color: var(--white-cl);
   transform: translateY(-10px);
 }
-
 
 /* 
 ================================
