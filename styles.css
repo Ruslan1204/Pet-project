@@ -254,7 +254,7 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
   width: 500px;
-  padding:  25px;
+  padding: 25px;
 
   background-color: var(--white-cl);
 
@@ -298,28 +298,33 @@ img {
   cursor: pointer;
 }
 
-.modal-title {
-  display: block; 
-  font-size: 20px;
-  text-transform: uppercase;
-  text-align: center;
-
-  color: var(--btn-mode-light-cl);
-}
-
-.form-group,
-.form-type,
-.form-policy-group{
-  display: block;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
 /* 
 ================================
 | Modal form
 ================================
 */
+.modal-title {
+  display: block;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align: center;
+
+  color: var(--btn-mode-light-cl);
+
+  margin-bottom: 25px;
+}
+
+.form-modal-group,
+.form-type,
+.form-policy-group {
+  display: block;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form-modal-label {
+  color: var(--accent-cl);
+}
 
 /* 
 ================================
@@ -954,8 +959,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 44px;
-  height: 44px;
+  width: 45px;
+  height: 45px;
   background-color: var(--white-cl);
 
   border-radius: 50%;
