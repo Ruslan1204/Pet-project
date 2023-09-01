@@ -308,11 +308,9 @@ img {
   background-color: rgba(0, 0, 0, 0.3);
   -webkit-transition: opacity 400ms, visibility 400ms;
   transition: opacity 400ms, visibility 400ms;
-  /* 
-    Modal form
-    */
 }
-.backdrop.modal-wrapper {
+
+.backdrop__modal-wrapper {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -327,22 +325,26 @@ img {
   transition: transform 300ms ease-in-out 200ms, opacity 300ms ease-in-out 200ms;
   transition: transform 300ms ease-in-out 200ms, opacity 300ms ease-in-out 200ms, -webkit-transform 300ms ease-in-out 200ms;
 }
+
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
   visibility: hidden;
 }
+
 .backdrop.is-hidden .backdrop__modal-wrapper {
   -webkit-transform: translate(-50%, -50%) scale(0.4);
           transform: translate(-50%, -50%) scale(0.4);
   opacity: 0;
 }
+
 .backdrop .backdrop__modal-wrapper {
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
   opacity: 1;
 }
-.backdrop.modal-btn {
+
+.backdrop__modal-btn {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -360,7 +362,11 @@ img {
   background-color: transparent;
   cursor: pointer;
 }
-.backdrop.modal-title {
+
+/* 
+  Modal form
+  */
+.backdrop__modal-title {
   display: block;
   font-size: 20px;
   text-transform: uppercase;

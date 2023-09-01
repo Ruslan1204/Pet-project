@@ -9,68 +9,69 @@
   
     transition: opacity 400ms, visibility 400ms;
   
-    &.modal-wrapper {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 500px;
-      padding: 25px;
-    
-      background-color: var(--white-cl);
-    
-      border-radius: 15px;
-    
-      transition: transform 300ms ease-in-out 200ms, opacity 300ms ease-in-out 200ms;
-    }
-    
-    &.is-hidden {
-      opacity: 0;
-      pointer-events: none;
-      visibility: hidden;
-    }
-    
-    &.is-hidden .backdrop__modal-wrapper {
-      transform: translate(-50%, -50%) scale(0.4);
-      opacity: 0;
-    }
-    
-    & .backdrop__modal-wrapper {
-      transform: translate(-50%, -50%) scale(1);
-      opacity: 1;
-    }
-    
-    &.modal-btn {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-    
-      display: flex;
-      align-items: center;
-    
-      width: 30px;
-      height: 30px;
-      padding: 0;
-    
-      border: 1px solid var(--accent-cl);
-      border-radius: 50%;
-      background-color: transparent;
-    
-      cursor: pointer;
-    }
-    
-    /* 
-      Modal form
-      */
-    &.modal-title {
-      display: block;
-      font-size: 20px;
-      text-transform: uppercase;
-      text-align: center;
-    
-      color: var(--btn-mode-light-cl);
-    
-      margin-bottom: 25px;
-    }
+
   }
   
+  .backdrop__modal-wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    padding: 25px;
+  
+    background-color: var(--white-cl);
+  
+    border-radius: 15px;
+  
+    transition: transform 300ms ease-in-out 200ms, opacity 300ms ease-in-out 200ms;
+  }
+  
+  .backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  
+  .backdrop.is-hidden .backdrop__modal-wrapper {
+    transform: translate(-50%, -50%) scale(0.4);
+    opacity: 0;
+  }
+  
+  .backdrop .backdrop__modal-wrapper {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  
+  .backdrop__modal-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  
+    display: flex;
+    align-items: center;
+  
+    width: 30px;
+    height: 30px;
+    padding: 0;
+  
+    border: 1px solid var(--accent-cl);
+    border-radius: 50%;
+    background-color: transparent;
+  
+    cursor: pointer;
+  }
+  
+  /* 
+    Modal form
+    */
+  .backdrop__modal-title {
+    display: block;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+  
+    color: var(--btn-mode-light-cl);
+  
+    margin-bottom: 25px;
+  }
