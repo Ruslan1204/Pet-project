@@ -1,0 +1,81 @@
+/* 
+================================
+| Header section 
+================================
+*/
+
+.header {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  z-index: 3;
+  background-color: rgba(24, 27, 37, 0);
+}
+
+.header_container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 130px;
+}
+
+.navigation__list {
+  display: flex;
+  align-items: center;
+}
+
+.navigation__item {
+  margin-right: 30px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.navigation__link {
+  color: var(--white-cl);
+
+  transition: color 400ms ease-out;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-cl);
+  }
+}
+
+.navigation__link,
+.header__phone {
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.33;
+  letter-spacing: 1.2px;
+
+  display: block;
+  padding-top: 52px;
+  padding-bottom: 52px;
+
+  color: var(--white-cl);
+}
+
+.header__gruop {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.header__phone {
+  margin-right: 62px;
+
+  transition: color 400ms ease-out;
+
+  &:hover,
+  &:focus {
+    color: var(--accent-cl);
+  }
+}
+
+.header__button {
+  animation: swing 10000ms ease-in-out infinite;
+}

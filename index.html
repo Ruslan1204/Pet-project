@@ -24,138 +24,160 @@
 
     <!-- Custom styles -->
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <header class="header">
       <div class="container header_container">
-        <a
-          class="logo"
-          href="./index.html"
-          aria-label="Логотип сайту BarberShop"
-        >
-          <img
-            src="./header_images/Logo.png"
-            alt="Logo"
-            width="69"
-            height="56"
-          />
+        <a class="logo" href="./index.html" aria-label="Логотип сайту BarberShop">
+          <img src="./header_images/Logo.png" alt="Logo" width="69" height="56" />
         </a>
 
         <nav class="navigation">
-          <ul class="navigation-list">
-            <li class="navigation-item list">
-              <a class="link navigation-link" href="#">About</a>
+          <ul class="navigation__list">
+            <li class="navigation__item list">
+              <a class="link navigation__link" href="#">About</a>
             </li>
-            <li class="navigation-item list">
-              <a class="link navigation-link" href="#">Services and prices</a>
+            <li class="navigation__item list">
+              <a class="link navigation__link" href="#">Services and prices</a>
             </li>
-            <li class="navigation-item list">
-              <a class="link navigation-link" href="#">Barbers</a>
+            <li class="navigation__item list">
+              <a class="link navigation__link" href="#">Barbers</a>
             </li>
-            <li class="navigation-item list">
-              <a class="link navigation-link" href="#">Contacts</a>
+            <li class="navigation__item list">
+              <a class="link navigation__link" href="#">Contacts</a>
             </li>
           </ul>
         </nav>
 
-        <div class="header-gruop">
-          <a class="link header-phone" href="tel:+380441111111"
-            >+38 044 111 11 11</a
-          >
-          <button
-            class="btn btn-mode-dark header-button"
-            type="button"
-            data-modal-open
-          >
+        <div class="header__gruop">
+          <a class="link header__phone" href="tel:+380441111111">+38 044 111 11 11</a>
+          <button class="btn btn-mode-dark header__button" type="button" data-modal-open>
             Online-booking
           </button>
 
-          <div class="backgrop is-hidden" data-modal>
-            <div class="modal-wrapper">
-              <button class="modal-btn" data-modal-close>
+          <div class="backdrop is-hidden" data-modal>
+            <div class="backdrop__modal-wrapper">
+              <button class="backdrop__modal-btn" data-modal-close>
                 <svg width="30" height="30">
                   <use href="./icons/close.svg#icon-close"></use>
                 </svg>
               </button>
 
-              <strong class="modal-title">Booking a barber</strong>
-              <form class="modal-form">
-                <label class="form-modal-group ">
-                  <span class="form-modal-label">Name</span>
-                  <input class="modal-form-input" type="text" name="user-name" />
-                  <span class="warning">
-                    <svg class="form-icon" width="20" height="20">
+              <strong class="backdrop__modal-title">Booking a barber</strong>
+              <form class="form">
+                <label class="form__modal-group">
+                  <span class="form__modal-label">Name</span>
+                  <input
+                    class="form__modal-input"
+                    type="text"
+                    name="user-name"
+                    minlength="3"
+                    placeholder=" "
+                  />
+                  <span class="form__warning">
+                    The name must be at least 3 characters long.
+                    <svg class="form__warning-icon" width="20" height="20">
                       <use href="./icons/sprite-form.svg#icon-warning"></use>
                     </svg>
                   </span>
-                  <span class="error">
-                    <svg class="form-icon" width="20" height="20">
+                  <span class="form__error">
+                    The entered data is incorrect.
+                    <svg class="form__error-icon" width="20" height="20">
                       <use href="./icons/sprite-form.svg#icon-error"></use>
                     </svg>
                   </span>
-                  <svg class="form-modal-icon" width="20" height="20">
+                  <svg class="form__modal-icon" width="20" height="20">
                     <use href="./icons/sprite-form.svg#icon-user"></use>
                   </svg>
                 </label>
-                <label class="form-modal-group">
-                  <span class="form-modal-label">Phone</span>
-                  <input class="modal-form-input" type="tel" name="user-phone" />
-                  <span class="warning">
-                    <svg class="form-icon" width="20" height="20">
+                <label class="form__modal-group">
+                  <span class="form__modal-label">Phone</span>
+                  <input
+                    class="form__modal-input"
+                    type="tel"
+                    name="user-phone"
+                    minlength="3"
+                    placeholder=" "
+                  />
+                  <span class="form__warning">
+                    The name must be at least 3 characters long.
+                    <svg class="form__warning-icon" width="20" height="20">
                       <use href="./icons/sprite-form.svg#icon-warning"></use>
                     </svg>
                   </span>
-                  <span class="error">
-                    <svg class="form-icon" width="20" height="20">
+                  <span class="form__error">
+                    The entered data is incorrect.
+                    <svg class="form__error-icon" width="20" height="20">
                       <use href="./icons/sprite-form.svg#icon-error"></use>
                     </svg>
                   </span>
-                  <svg class="form-modal-icon" width="20" height="20">
+                  <svg class="form__modal-icon" width="20" height="20">
                     <use href="./icons/sprite-form.svg#icon-phone"></use>
                   </svg>
                 </label>
-                <label class="form-modal-group">
-                  <span class="form-modal-label">Email</span>
-                  <input class="modal-form-input" type="mail" name="user-mail" />
-                  <span class="warning">
-                    <svg class="form-icon" width="20" height="20">
+                <label class="form__modal-group">
+                  <span class="form__modal-label">Email</span>
+                  <input
+                    class="form__modal-input"
+                    type="mail"
+                    name="user-mail"
+                    minlength="3"
+                    placeholder=" "
+                  />
+                  <span class="form__warning">
+                    The name must be at least 3 characters long.
+                    <svg class="form__warning-icon" width="20" height="20">
                       <use href="./icons/sprite-form.svg#icon-warning"></use>
                     </svg>
                   </span>
-                  <span class="error">
-                    <svg class="form-icon" width="20" height="20">
+                  <span class="form__error">
+                    The entered data is incorrect.
+                    <svg class="form__error-icon" width="20" height="20">
                       <use href="./icons/sprite-form.svg#icon-error"></use>
                     </svg>
                   </span>
-                  <svg class="form-modal-icon" width="20" height="20">
+                  <svg class="form__modal-icon" width="20" height="20">
                     <use href="./icons/sprite-form.svg#icon-mail"></use>
                   </svg>
                 </label>
 
-                <label class="form-type">
-                  <span class="form-type-group">
-                    <input class="modal-form-input" type="radio" />
-                    <span></span>
-                  </span>
-                  <span class="form-type-group">
-                    <input class="modal-form-input" type="radio" />
-                    <span></span>
-                  </span>
-                </label>
+                <p>Choose a form of payment</p>
+                <div class="form__pay-type">
+                  <label class="form__pay-group">
+                    <input
+                      class="form__pay-checkbox visually-hidden"
+                      type="radio"
+                      name="user-pay"
+                      checked
+                    />
+                    <svg class="form__pay-option" width="50" height="50">
+                      <use href="./icons/sprite-form.svg#icon-cc-mastercard"></use>
+                    </svg>
+                  </label>
+                  <label class="form-pay-group">
+                    <input class="form-pay-checkbox visually-hidden" type="radio" name="user-pay" />
+                    <svg class="form-pay-option" width="50" height="50">
+                      <use href="./icons/sprite-form.svg#icon-cc-visa"></use>
+                    </svg>
+                  </label>
+                </div>
 
-                <label class="form-policy-group">
-                  <input class="modal-form-input" type="checkbox" />
-                  <span class="custom-checkbox">
-                    <svg class="custom-checkbox-icon" width="20" height="20">
+                <label class="form__policy-group">
+                  <input class="form__checkbox visually-hidden" type="checkbox" />
+                  <span class="form__custom-checkbox">
+                    <svg class="form__custom-checkbox-icon" width="18" height="18">
                       <use href="./icons/sprite-form.svg#icon-check"></use>
                     </svg>
                   </span>
-                  <span class="form-policy-desc"
+                  <span class="form__policy-desc"
                     >I agree with the policy on the use of personal data</span
                   >
                 </label>
 
-                <button class="btn btn-mode-light" type="submit">Send</button>
+                <div class="form__checkbox-btn">
+                  <button class="btn btn-mode-light checkbox-btn" type="submit">Send</button>
+                </div>
               </form>
             </div>
           </div>
@@ -165,11 +187,11 @@
     <main>
       <section class="hero section">
         <div class="container">
-          <div class="hero-left-side">
-            <ul class="hero-list list hero-socials-list">
-              <li class="hero-item list">
+          <div class="hero__left-side">
+            <ul class="hero__list list hero__socials-list">
+              <li class="hero__item list">
                 <a
-                  class="link"
+                  class="hero__link"
                   href="https://Instagram.com"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -178,7 +200,7 @@
               </li>
               <li class="list">
                 <a
-                  class="link"
+                  class="hero__link"
                   href="https://Youtube.com"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -187,49 +209,46 @@
               </li>
             </ul>
           </div>
-          <div class="hero-gruop">
-            <p class="uppertitle">A hair salon for men in Kyiv</p>
-            <h1 class="title">BarberShop</h1>
-            <p class="subtitle">
-              We are experts in trendy men’s haircuts. We work quickly,
-              carefully and with style.
+          <div class="hero__gruop">
+            <p class="hero__uppertitle">A hair salon for men in Kyiv</p>
+            <h1 class="hero__title">BarberShop</h1>
+            <p class="hero__subtitle">
+              We are experts in trendy men’s haircuts. We work quickly, carefully and with style.
             </p>
           </div>
-          <ul class="slider-pagination">
-            <li class="slider-item list">
-              <img
-                src="./slider_images/Slider Navigation.png"
-                alt="slider_navigation"
-              />
-            </li>
-          </ul>
-          <ul class="hero-list slider-controls">
-            <li class="hero-item list">
-              <button class="slider-btn slider-btn-disabl" type="button">
-                Back
-              </button>
-            </li>
-            <li class="list hero-list">
-              <button class="slider-btn" type="button">Forward</button>
-            </li>
-          </ul>
+          <div class="slider">
+            <ul class="slider__pagination">
+              <li class="list">
+                <img src="./slider_images/Slider Navigation.png" alt="slider_navigation" />
+              </li>
+            </ul>
+
+            <ul class="hero__list slider__controls">
+              <li class="slider__item list">
+                <button class="slider__btn slider__btn-disabl" type="button">Back</button>
+              </li>
+              <li class="slider__item list">
+                <button class="slider__btn" type="button">Forward</button>
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
       <section class="about section">
-        <div class="container about-container">
-          <ul class="list">
-            <li class="item">
+        <div class="container about__container">
+          <ul class="about-list list">
+            <li class="about-list__item">
               <img
-                class="about-img"
+                class="about-list__img"
                 src="./about_images/img 1.jpg"
                 alt="beard shaving"
                 width="270"
                 height="445"
               />
             </li>
-            <li class="item">
+            <li class="about-list__item">
               <img
-                class="about-img"
+                class="about-list__img"
                 src="./about_images/img 2.jpg"
                 alt="head shaving"
                 width="270"
@@ -237,163 +256,158 @@
               />
             </li>
           </ul>
-          <div class="about-gruop">
-            <p class="uppertitle">About</p>
-            <h2 class="titel">Best Barbershop in your city</h2>
-            <p class="subtitle">
-              If you want to add more confidence to your image, you should
-              definitely visit us.
+          <div class="about__gruop">
+            <p class="about__uppertitle">About</p>
+            <h2 class="about__titel">Best Barbershop in your city</h2>
+            <p class="about__subtitle">
+              If you want to add more confidence to your image, you should definitely visit us.
             </p>
-            <p class="description">
-              We are a team that never stops at what has been achieved and are
-              thirsty for changes. And when you fall into the hands of our
-              master, you will never be the same again. We are a team that is
-              always "on the same wave" with clients. Therefore, we are always
+            <p class="about__description">
+              We are a team that never stops at what has been achieved and are thirsty for changes.
+              And when you fall into the hands of our master, you will never be the same again. We
+              are a team that is always "on the same wave" with clients. Therefore, we are always
               ready to improve everyone who comes to us!
             </p>
-            <button class="btn btn-mode-light" type="button">
-              ONLINE-BOOKING
-            </button>
+            <button class="btn btn-mode-light" type="button">ONLINE-BOOKING</button>
           </div>
         </div>
       </section>
       <section class="price section">
         <div class="container">
-          <p class="uppertitle">Spend your time with the best masters</p>
-          <h2 class="titel">Services and prices</h2>
-          <ul class="list">
-            <li class="item price-item">
-              <ul class="inner-list">
-                <li class="inner-item list">
+          <p class="price__uppertitle">Spend your time with the best masters</p>
+          <h2 class="price__titel">Services and prices</h2>
+          <ul class="price__list list">
+            <li class="price__item">
+              <ul class="price__inner-list">
+                <li class="price__inner-item">
                   <span>Men’s haircut</span><span>from 300 uah.</span>
                 </li>
-                <li class="inner-item list">
+                <li class="price__inner-item">
                   <span>Beard trim</span><span> from 300 uah.</span>
                 </li>
-                <li class="inner-item list">
+                <li class="price__inner-item">
                   <span>Mustache trim</span><span>from 200 uah.</span>
                 </li>
-                <li class="inner-item list">
+                <li class="price__inner-item">
                   <span>Straight razor shave</span><span>from 200 uah.</span>
                 </li>
               </ul>
             </li>
-            <li class="item price-item">
-              <ul class="inner-list">
-                <li class="inner-item list">
+            <li class="price__item">
+              <ul class="price__inner-list">
+                <li class="price__inner-item">
                   <span>Trainee’s haircut</span><span>from 50 uah.</span>
                 </li>
-                <li class="inner-item list">
+                <li class="price__inner-item">
                   <span>Haircut under the nozzle</span>
                   <span>from 200 uah.</span>
                 </li>
-                <li class="inner-item list">
+                <li class="price__inner-item">
                   <span>Children’s haircut (0-12 y.o.)</span>
                   <span>from 300 uah.</span>
                 </li>
-                <li class="inner-item list">
+                <li class="price__inner-item">
                   <span>Camouflage of gray hair</span>
                   <span>from 200 uah.</span>
                 </li>
               </ul>
             </li>
           </ul>
-          <button class="btn btn-mode-dark price-button" type="button">
-            online-booking
-          </button>
+          <button class="btn btn-mode-dark price__button" type="button">online-booking</button>
         </div>
       </section>
       <section class="benefits section">
-        <div class="container benefits-container">
-          <ul class="list">
-            <div class="benefits-wrapper">
-              <div class="benefits-item">
-                <li class="item">
-                  <p class="benefits-amount">
-                    600<sup class="benefits-amount-color">+</sup>
-                  </p>
-                  <p class="benefits-text">Satisfied customers per day</p>
+        <div class="container benefits__container">
+          <ul class="benefits__list list">
+            <div class="benefits__wrapper">
+              <div class="benefits__wrapper">
+                <li class="benefits__item">
+                  <p class="benefits__amount">600<sup class="benefits__amount-color">+</sup></p>
+                  <p class="benefits__text">Satisfied customers <br />per day</p>
                 </li>
               </div>
-              <div class="benefits-item">
-                <li class="item">
-                  <p class="benefits-amount">
-                    50<sup class="benefits-amount-color">+</sup>
+              <div class="benefits__wrapper">
+                <li class="benefits__item">
+                  <p class="benefits__amount">50<sup class="benefits__amount-color">+</sup></p>
+                  <p class="benefits__text">
+                    Awards for excellent <br />
+                    service
                   </p>
-                  <p class="benefits-text">Awards for excellent service</p>
                 </li>
               </div>
             </div>
-            <div class="benefits-wrapper">
-              <div class="benefits-item">
-                <li class="item">
-                  <p class="benefits-amount">
-                    20<sup class="benefits-amount-color">+</sup>
+            <div class="benefits__wrapper">
+              <div class="benefits__wrapper">
+                <li class="benefits__item">
+                  <p class="benefits__amount">20<sup class="benefits__amount-color">+</sup></p>
+                  <p class="benefits__text">
+                    Kyiv’s best <br />
+                    barbers
                   </p>
-                  <p class="benefits-text">Kyiv’s best barbers</p>
                 </li>
               </div>
-              <div class="benefits-item">
-                <li class="item">
-                  <p class="benefits-amount">
-                    100<sup class="benefits-amount-color">+</sup>
+              <div class="benefits__wrapper">
+                <li class="benefits__item">
+                  <p class="benefits__amount">100<sup class="benefits__amount-color">+</sup></p>
+                  <p class="benefits__text">
+                    Gifts for regular <br />
+                    customers
                   </p>
-                  <p class="benefits-text">Gifts for regular customers</p>
                 </li>
               </div>
             </div>
           </ul>
-          <div class="benefits-gruop">
-            <p class="uppertitle">Old traditional school</p>
-            <h2 class="titel">¿Why people come to us?</h2>
-            <p class="subtitle">
-              Only good things are said about us. But it's better to see and
-              feel 1 time than read 10 times.
+          <div class="benefits__gruop">
+            <p class="benefits__uppertitle">Old traditional school</p>
+            <h2 class="benefits__titel">¿Why people come to us?</h2>
+            <p class="benefits__subtitle">
+              Only good things are said about us. But it's better to see and feel 1 time than read
+              10 times.
             </p>
           </div>
         </div>
       </section>
       <section class="team section">
         <div class="container">
-          <p class="uppertitle">For true enjoyers of the atmosphere</p>
-          <h2 class="title">Our barbers</h2>
-          <ul class="member-list grid">
-            <li class="member-item list grid-items">
+          <p class="team__uppertitle">For true enjoyers of the atmosphere</p>
+          <h2 class="team__title">Our barbers</h2>
+          <ul class="team__member-list grid">
+            <li class="team__member-item list grid-items">
               <img
-                class="member-img"
+                class="team__member-img"
                 src="./member_images/img1.jpg"
                 alt="clipper haircut from behind"
                 width="370"
                 height="346"
               />
-              <div class="member-gruop">
-                <h3 class="member-title">John Smith</h3>
-                <p class="member-position">Extreme Barber</p>
+              <div class="team__member-gruop">
+                <h3 class="team__member-title">John Smith</h3>
+                <p class="team__member-position">Extreme Barber</p>
                 <ul class="socials-list">
-                  <li class="socials list">
-                    <a class="socials-link" href="#">
-                      <svg class="socials__icon" width="20" height="20">
+                  <li class="socials-list__item list">
+                    <a class="socials-list__link" href="#">
+                      <svg class="socials-list__icon" width="20" height="20">
                         <use href="./icons/sprite.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="socials list">
-                    <a class="socials-link" href="#">
-                      <svg class="socials__icon" width="20" height="20">
+                  <li class="socials-list__item list">
+                    <a class="socials-list__link" href="#">
+                      <svg class="socials-list__icon" width="20" height="20">
                         <use href="./icons/sprite.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="socials list">
-                    <a class="socials-link" href="#">
-                      <svg class="socials__icon" width="20" height="20">
+                  <li class="socials-list__item list">
+                    <a class="socials-list__link" href="#">
+                      <svg class="socials-list__icon" width="20" height="20">
                         <use href="./icons/sprite.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="socials list">
-                    <a class="socials-link" href="#">
-                      <svg class="socials__icon" width="20" height="20">
+                  <li class="socials-list__item list">
+                    <a class="socials-list__link" href="#">
+                      <svg class="socials-list__icon" width="20" height="20">
                         <use href="./icons/sprite.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -401,42 +415,42 @@
                 </ul>
               </div>
             </li>
-            <li class="member-item list grid-items">
+            <li class="team__member-item list grid-items">
               <img
-                class="member-img"
+                class="team__member-img"
                 src="./member_images/img2.jpg"
                 alt="side clipper haircut"
                 width="370"
                 height="346"
               />
-              <div class="member-gruop">
-                <h3 class="member-title">Michele Doe</h3>
-                <p class="member-position">Extreme Barber</p>
+              <div class="team__member-gruop">
+                <h3 class="team__member-title">Michele Doe</h3>
+                <p class="team__member-position">Extreme Barber</p>
                 <ul class="socials-list">
-                  <li class="socials list">
-                    <a class="socials-link" href="#">
-                      <svg class="socials__icon" width="20" height="20">
+                  <li class="socials-list__item list">
+                    <a class="socials-list__link" href="#">
+                      <svg class="socials-list__icon" width="20" height="20">
                         <use href="./icons/sprite.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="socials list">
-                    <a class="socials-link" href="#">
-                      <svg class="socials__icon" width="20" height="20">
+                  <li class="socials-list__item list">
+                    <a class="socials-list__link" href="#">
+                      <svg class="socials-list__icon" width="20" height="20">
                         <use href="./icons/sprite.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="socials list">
-                    <a class="socials-link" href="#">
-                      <svg class="socials__icon" width="20" height="20">
+                  <li class="socials-list__item list">
+                    <a class="socials-list__link" href="#">
+                      <svg class="socials-list__icon" width="20" height="20">
                         <use href="./icons/sprite.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="socials list">
-                    <a class="socials-link" href="#">
-                      <svg class="socials__icon" width="20" height="20">
+                  <li class="socials-list__item list">
+                    <a class="socials-list__link" href="#">
+                      <svg class="socials-list__icon" width="20" height="20">
                         <use href="./icons/sprite.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -444,42 +458,42 @@
                 </ul>
               </div>
             </li>
-            <li class="member-item list grid-items">
+            <li class="team__member-item list grid-items">
               <img
-                class="member-img"
+                class="team__member-img"
                 src="./member_images/img3.jpg"
                 alt="hair styling"
                 width="370"
                 height="346"
               />
-              <div class="member-gruop">
-                <h3 class="member-title">Alan Black</h3>
-                <p class="member-position">Extreme Barber</p>
+              <div class="team__member-gruop">
+                <h3 class="team__member-title">Alan Black</h3>
+                <p class="team__member-position">Extreme Barber</p>
                 <ul class="socials-list">
-                  <li class="socials list">
-                    <a class="socials-link" href="#">
-                      <svg class="socials__icon" width="20" height="20">
+                  <li class="socials-list__item list">
+                    <a class="socials-list__link" href="#">
+                      <svg class="socials-list__icon" width="20" height="20">
                         <use href="./icons/sprite.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="socials list">
-                    <a class="socials-link" href="#">
-                      <svg class="socials__icon" width="20" height="20">
+                  <li class="socials-list__item list">
+                    <a class="socials-list__link" href="#">
+                      <svg class="socials-list__icon" width="20" height="20">
                         <use href="./icons/sprite.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="socials list">
-                    <a class="socials-link" href="#">
-                      <svg class="socials__icon" width="20" height="20">
+                  <li class="socials-list__item list">
+                    <a class="socials-list__link" href="#">
+                      <svg class="socials-list__icon" width="20" height="20">
                         <use href="./icons/sprite.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
-                  <li class="socials list">
-                    <a class="socials-link" href="#">
-                      <svg class="socials__icon" width="20" height="20">
+                  <li class="socials-list__item list">
+                    <a class="socials-list__link" href="#">
+                      <svg class="socials-list__icon" width="20" height="20">
                         <use href="./icons/sprite.svg#icon-linkedin"></use>
                       </svg>
                     </a>
@@ -492,39 +506,39 @@
       </section>
       <section class="gallery section">
         <div class="container">
-          <p class="uppertitle">In Latin, "barba" means "beard"</p>
-          <h2 class="section-titel visually-hidden">Gallery job</h2>
-          <ul class="gallery-list grid">
-            <li class="item list grid-items">
+          <p class="gallery__uppertitle">In Latin, "barba" means "beard"</p>
+          <h2 class="allery__titel visually-hidden">Gallery job</h2>
+          <ul class="gallery__list grid">
+            <li class="gallery__item list grid-items">
               <img
-                class="gallery-img"
+                class="gallery__img"
                 src="./gallery_images/Rectangle 1.jpg"
                 alt="cuts his head"
                 width="270"
                 height="360"
               />
             </li>
-            <li class="item list grid-items">
+            <li class="gallery__item list grid-items">
               <img
-                class="gallery-img"
+                class="gallery__img"
                 src="./gallery_images/Rectangle 2.jpg"
                 alt="facial shaving"
                 width="270"
                 height="360"
               />
             </li>
-            <li class="item list grid-items">
+            <li class="gallery__item list grid-items">
               <img
-                class="gallery-img"
+                class="gallery__img"
                 src="./gallery_images/Rectangle 3.jpg"
                 alt="a towel on the face"
                 width="270"
                 height="360"
               />
             </li>
-            <li class="item list grid-items">
+            <li class="gallery__item list grid-items">
               <img
-                class="gallery-img"
+                class="gallery__img"
                 src="./gallery_images/Rectangle 4.jpg"
                 alt="shaves the contour"
                 width="270"
@@ -535,63 +549,98 @@
         </div>
       </section>
       <section class="contacts section">
-        <div class="container">
-          <div class="contacts-left-side">
-            <h2 class="left-title">Online-booking</h2>
+        <div class="container contacts__container">
+          <div class="contacts__left-side">
+            <h2 class="contacts__left-title">Online-booking</h2>
 
-            <form class="contacts-form" name="contacts-form">
-              <div class="contacts-wrapper">
-                <label class="form-group"
+            <form class="contacts__form" name="contacts-form">
+              <div class="contacts__form-wrapper">
+                <label class="contacts__form-group"
                   ><input
-                    class="form-input"
+                    class="contacts__form-input"
                     type="text"
                     name="user-name"
                     placeholder="Your Name"
-                  /><span class="form-label">Name*</span></label
+                  /><span class="contacts__form-label">Name*</span></label
                 >
-                <label class="form-group"
+                <label class="contacts__form-group"
                   ><input
-                    class="form-input"
+                    class="contacts__form-input"
                     type="tel"
                     name="user-phone"
                     placeholder="Your Phone"
-                  /><span class="form-label">Phone*</span></label
+                  /><span class="contacts__form-label">Phone*</span></label
                 >
               </div>
-              <label class="form-message-group">
+              <label class="contacts__form-message-group">
                 <textarea
-                  class="form-message"
+                  class="contacts__form-message"
                   name="user-message"
                   placeholder="Your Message"
                   id=""
                   rows="4"
                 ></textarea>
-                <span class="form-label">Message</span>
+                <span class="contacts__form-label">Message</span>
               </label>
               <button class="btn btn-mode-dark" type="submit">send</button>
             </form>
           </div>
-          <div class="contacts-right-side"></div>
+          <div class="contacts__right-side">
+            <h2 class="contacts__right-title">Contacts</h2>
+            <address>
+              <ul class="list">
+                <li class="contacts__link">
+                  <svg class="contacts__icon" width="20" height="20">
+                    <use href="./icons/sprite-form.svg#icon-location"></use>
+                  </svg>
+                  <a
+                    href="https://goo.gl/maps/3wkYkbQ8jReYCoed6"
+                    class="contacts__link-item"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    st. Vasilkivska, 7A Kyiv, 08132
+                  </a>
+                </li>
+                <li class="contacts__link">
+                  <svg class="contacts__icon" width="20" height="20">
+                    <use href="./icons/sprite-form.svg#icon-phone"></use>
+                  </svg>
+                  <a href="tel:+380441111111" class="contacts__link-item">+38 044 111 11 11</a>
+                </li>
+                <li class="contacts__link">
+                  <svg class="contacts__icon" width="20" height="20">
+                    <use href="./icons/sprite-form.svg#icon-mail"></use>
+                  </svg>
+                  <a href="mailto:info@devstudio.com" class="contacts__link-item"
+                    >info@devstudio.com</a
+                  >
+                </li>
+              </ul>
+            </address>
+            <h3 class="contacts__subtitle">Working hours</h3>
+            <p class="contacts__schedule">Every day from 9:00 to 22:00</p>
+          </div>
         </div>
       </section>
     </main>
     <footer class="footer section">
       <div class="container">
-        <div class="footer-wrapper">
-          <p class="copyright">&#169; Copyright 2020</p>
-          <ul class="footer_list">
-            <li class="link">
+        <div class="footer__wrapper">
+          <p class="footer__copyright">&#169; Copyright 2020</p>
+          <ul class="footer__list list">
+            <li class="footer__item">
               <a
-                class="link"
+                class="footer__link"
                 href="https://Instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 >Instagram</a
               >
             </li>
-            <li class="link">
+            <li class="footer__item">
               <a
-                class="link"
+                class="footer__link"
                 href="https://Youtube.com"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -603,95 +652,6 @@
       </div>
     </footer>
 
-    <!-- <div class="backdrop is-hidden container" data-modal>
-      <div class="backdrop__modal">
-        <button type="button" class="backdrop__close flex" data-modal-close>
-          <svg class="" width="18" height="18">
-            <use href="./images/icons.svg#icon-close-black"></use>
-          </svg>
-        </button>
-
-        <div class="form">
-          <b class="form__titel">Залиште свої дані, ми вам передзвонимо</b>
-          <form class="">
-            <label class="">
-              <span class="form__text backdrop-text-styles">Ім'я </span>
-              <span class="form__wraper">
-                <input
-                  name="user-name"
-                  type="text"
-                  class="form__contact-input user-input"
-                />
-                <svg class="form__svg" width="18" height="18">
-                  <use href="./images/icons.svg#icon-person-black"></use>
-                </svg>
-              </span>
-            </label>
-            <label class="">
-              <span class="form__text backdrop-text-styles">Телефон</span>
-              <span class="form__wraper">
-                <input
-                  name="user-phone"
-                  type="tel"
-                  class="form__contact-input user-input"
-                />
-                <svg class="form__svg" width="18" height="18">
-                  <use href="./images/icons.svg#icon-phone-black"></use>
-                </svg>
-              </span>
-            </label>
-            <label class="">
-              <span class="form__text backdrop-text-styles">Пошта</span>
-              <span class="form__wraper">
-                <input
-                  name="user-email"
-                  type="email"
-                  class="form__contact-input user-input"
-                />
-                <svg class="form__svg" width="18" height="18">
-                  <use href="./images/icons.svg#icon-email-black"></use>
-                </svg>
-              </span>
-            </label>
-            <label class="textarea">
-              <span class="textarea__text backdrop-text-styles">Коментар</span>
-              <textarea
-                name="user-coment"
-                placeholder="Введіть текст"
-                class="textarea__form backdrop-text-styles"
-              ></textarea>
-            </label>
-            <div class="checkbox">
-              <label class="checkbox__text backdrop-text-styles">
-                <input
-                  name="accept-policy"
-                  type="checkbox"
-                  required
-                  class="checkbox__input"
-                />
-                <span class="checkbox__icon"></span>
-                <span
-                  >Погоджуюся з розсилкою та приймаю&ensp;<span
-                    class="checkbox__titel"
-                    ><u>Умови договору</u></span
-                  ></span
-                >
-              </label>
-            </div>
-            <div class="checkbox__submit">
-              <button
-                type="submit"
-                class="button-text-primary contact-form-btn"
-              >
-                Відправити
-              </button>
-            </div>
-          </form>
-        </div>
-      </div>
-    </div> -->
-
     <script src="./modal.js"></script>
-    <!-- <script src="./mobile-menu.js"></script> -->
   </body>
 </html>

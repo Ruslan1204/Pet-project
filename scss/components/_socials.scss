@@ -1,0 +1,36 @@
+.socials-list {
+    display: flex;
+    align-items: center;
+    padding-bottom: 15px;
+  }
+  
+  .socials-list__item {
+    margin-right: 34px;
+
+    &:last-child {
+        margin-right: 0;
+      }
+  }
+  
+
+  
+  .socials-list__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: var(--white-cl);
+  
+    border-radius: 50%;
+  
+    fill: var(--btn-mode-light-cl);
+  
+    transition: fill 400ms ease-out;
+
+    &:hover,
+    &:focus {
+      fill: var(--accent-cl);
+    }
+  }
+  

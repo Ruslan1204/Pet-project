@@ -1,0 +1,31 @@
+@import './utils/vars';
+@import './utils/visually-hidden';
+
+// base styles
+@import './base/common';
+@import './base/container';
+@import './base/reset';
+@import './base/animations';
+@import './base/card-set';
+
+
+// components
+@import './components/button';
+@import './components/socials';
+@import './components/slider';
+@import './components/backdrop';
+@import './components/modal-form';
+@import './components/payment-checkbox';
+@import './components/custom-checkbox';
+
+
+// layouts
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/about';
+@import './layouts/price';
+@import './layouts/benefits';
+@import './layouts/team';
+@import './layouts/gallery';
+@import './layouts/contacts';
+@import './layouts/footer';

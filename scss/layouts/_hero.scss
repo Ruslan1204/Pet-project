@@ -1,0 +1,123 @@
+/*
+================================
+| Hervo section
+================================
+*/
+
+.hero {
+  background-color: #191c26;
+  background-image: url(./hero_images/hero-bg.jpg),
+    linear-gradient(to right, var(--white-cl) 17%, var(--dark-bg-cl) 17%);
+  background-repeat: no-repeat;
+  background-position: top right, center;
+  background-size: 1100px 680px, contain;
+  height: 680px;
+}
+
+.hero .container {
+  position: relative;
+  display: flex;
+}
+
+.hero__left-side {
+  display: flex;
+  align-items: flex-end;
+  flex-basis: 100px;
+}
+
+.hero__socials-list {
+  transform: translateY(150px) translateX(50px) rotate(-90deg);
+  transform-origin: left top;
+
+  &::before {
+    content: '';
+    display: block;
+    margin-right: 20px;
+    width: 60px;
+    height: 1px;
+    background-color: var(--btn-mode-light-cl);
+  }
+}
+
+.hero__list {
+  display: flex;
+  align-items: center;
+}
+
+.hero__item {
+  margin-right: 40px;
+
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.hero__link {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: 2.2px;
+
+  text-decoration: none;
+
+  color: var(--btn-mode-light-cl);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-cl);
+  }
+}
+
+.hero__gruop {
+  /* padding-top: 307px; */
+  width: 380px;
+}
+
+.hero__uppertitle {
+  display: flex;
+  align-items: center;
+
+  font-size: 11px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  line-height: normal;
+  text-transform: uppercase;
+  padding-top: 130px;
+
+  color: var(--secondary-text_cl);
+
+  animation: fade-bottom-to-top 1000ms ease-out;
+
+  &::before {
+    content: '';
+    display: block;
+    margin-right: 20px;
+    width: 60px;
+    height: 1px;
+    background-color: var(--secondary-text_cl);
+  }
+}
+
+.hero__title {
+  font-family: var(--secondary-font);
+  font-size: 72px;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 3.6px;
+  margin-bottom: 20px;
+
+  color: var(--white-cl);
+
+  animation: fade-left-to-right 1000ms ease-out;
+}
+
+.hero__subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.66;
+  letter-spacing: 0.36px;
+
+  color: #9da4bd;
+
+  animation: fade-bottom-to-top 1000ms ease-out;
+}

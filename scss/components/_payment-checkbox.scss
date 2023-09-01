@@ -1,0 +1,25 @@
+/* 
+  Payment-checkbox
+  */
+
+  .form__pay-type {
+    display: flex;
+    align-items: center;
+  }
+  
+  .form__pay-group:not(:last-child) {
+    margin-right: 20px;
+  }
+  
+  .form__pay-option {
+    fill: var(--accent-cl);
+    filter: grayscale(1);
+  
+    transition: filter 300ms ease;
+  }
+  
+  .form__pay-checkbox:checked + .form__pay-option {
+    filter: grayscale(0);
+  }
+  
+ 

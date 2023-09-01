@@ -1,0 +1,18 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--main-font);
+    font-size: 14px;
+    line-height: 1.86; /* 185.714% */
+    letter-spacing: 0.28px;
+  
+    color: var(--main-text-cl);
+  }
+  
+  .section {
+    padding-top: 130px;
+    padding-bottom: 130px;
+  }
+  

@@ -1,0 +1,37 @@
+
+.btn {
+    font-family: inherit;
+  
+    padding: 12px 20px;
+    max-width: 200px;
+    min-width: 160px;
+    min-height: 40px;
+    border-radius: 25px;
+  
+    font-size: 12px;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.08px;
+    text-transform: uppercase;
+    cursor: pointer;
+  
+    background-color: transparent;
+    border: 1px solid var(--accent-cl);
+  
+    transition: background-color 500ms ease-out;
+
+    &:hover,
+    &:focus {
+      color: var(--white-cl);
+      background: var(--accent-cl);
+    }
+    
+    &-mode-light {
+      color: var(--btn-mode-light-cl);
+    }
+    
+    &-mode-dark {
+      color: var(--white-cl);
+    }
+  }
+  

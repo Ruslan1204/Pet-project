@@ -1,0 +1,88 @@
+/* 
+================================
+| Modal
+================================
+*/
+
+.form__pay-type,
+.form__modal-group,
+.form-type,
+.form__policy-group {
+  display: block;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form__modal-group {
+  position: relative;
+}
+
+.form__modal-label {
+  display: block;
+  font-size: 14px;
+  color: var(--btn-mode-light-cl);
+}
+
+.form__modal-input {
+  width: 100%;
+  padding: 15px 35px;
+  border-radius: 10px;
+  border: 1px solid var(--accent-cl);
+  outline: transparent;
+}
+
+.form__modal-input:focus ~ .form__warning {
+  opacity: 1;
+}
+
+.form__modal-input:not(:placeholder-shown) ~ .form__warning {
+  opacity: 0;
+}
+
+.form__modal-input:invalid ~ .form__error {
+  opacity: 1;
+}
+
+.form__modal-icon {
+  position: absolute;
+  bottom: 15px;
+  left: 10px;
+
+  fill: var(--btn-mode-light-cl);
+}
+
+.form__warning,
+.form__error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+
+  bottom: -24px;
+  left: 10px;
+
+  width: 90%;
+
+  font-size: 12px;
+
+  transition: 400ms ease;
+}
+
+.form__warning {
+  color: rgb(255, 200, 0);
+
+  opacity: 0;
+}
+
+.form__error {
+  color: red;
+
+  opacity: 0;
+}
+
+.form__warning-icon,
+.form__error-icon {
+  display: inline-flex;
+  fill: currentColor;
+}
+
