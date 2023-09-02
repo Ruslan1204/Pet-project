@@ -5,6 +5,9 @@
 */
 
 .hero {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: #191c26;
   background-image: url(/hero_images/hero-bg.jpg),
     linear-gradient(to right, var(--white-cl) 17%, var(--dark-bg-cl) 17%);

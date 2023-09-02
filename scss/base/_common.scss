@@ -1,18 +1,30 @@
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: var(--main-font);
-    font-size: 14px;
-    line-height: 1.86; /* 185.714% */
-    letter-spacing: 0.28px;
-  
-    color: var(--main-text-cl);
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 1.86; /* 185.714% */
+  letter-spacing: 0.28px;
+
+  color: var(--main-text-cl);
+}
+
+.section {
+
+  @include mq(mobile) {
+    padding-top: 84px;
+    padding-bottom: 84px;
   }
-  
-  .section {
+
+  @include mq(tablet) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @include mq(desktop) {
     padding-top: 130px;
     padding-bottom: 130px;
   }
-  
+}

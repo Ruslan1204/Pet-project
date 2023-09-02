@@ -5,27 +5,43 @@
 */
 
 .about__container {
-  display: flex;
+  @include mq(tablet) {
+    display: flex;
+  }
 }
 
 .about-list {
-  display: flex;
-  align-items: center;
+  @include mq(mobile-only) {
+    display: none;
+  }
 
-  margin-right: 30px;
+  @include mq(tablet) {
+    margin-right: 30px;
+  }
+
+  @include mq(desktop) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .about-list__item {
-  margin-right: 30px;
-
   overflow: hidden;
 
-  box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048),
-    0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072),
-    0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+  @include mq(tablet) {
+    box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034), 0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+      0 12.5px 10px rgba(0, 0, 0, 0.06), 0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+      0 41.8px 33.4px rgba(0, 0, 0, 0.086), 0 100px 80px rgba(0, 0, 0, 0.12);
+  }
 
-  &:last-child {
-    margin-right: 0px;
+  @include mq(tablet-only) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @include mq(desktop) {
+    margin-right: 30px;
   }
 }
 
@@ -38,7 +54,13 @@
 }
 
 .about__gruop {
-  width: 470px;
+  @include mq(tablet) {
+    width: 330px;
+  }
+
+  @include mq(desktop) {
+    width: 470px;
+  }
 }
 
 .about__uppertitle {
@@ -65,25 +87,35 @@
 
 .about__titel {
   font-family: var(--secondary-font);
-  font-size: 42px;
+  font-size: 28px;
+  letter-spacing: 1.4px;
   font-weight: 700;
   line-height: normal;
-  letter-spacing: 2.1px;
-
   margin-bottom: 20px;
 
   color: var(--btn-mode-light-cl);
+
+  @include mq(desktop) {
+    font-size: 42px;
+    letter-spacing: 2.1px;
+  }
 }
 
 .about__subtitle {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 400;
-  line-height: 1.67;
-  letter-spacing: 0.36px;
+  line-height: 1.62;
+  letter-spacing: 0.32px;
+
+  color: var(--main-text-cl);
 
   margin-bottom: 20px;
 
-  color: var(--main-text-cl);
+  @include mq(tablet) {
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.36px;
+  }
 }
 
 .about__description {
@@ -92,7 +124,15 @@
   line-height: 1.86;
   letter-spacing: 0.28px;
 
-  margin-bottom: 38px;
+  margin-bottom: 40px;
 
   color: var(--main-text-cl);
+
+  @include mq(tablet) {
+    margin-bottom: 77px;
+  }
+
+  @include mq(desktop) {
+    margin-bottom: 38px;
+  }
 }
