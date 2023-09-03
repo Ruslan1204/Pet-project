@@ -43,8 +43,20 @@
 }
 
 .team__member-list {
-  /* display: flex; */
+  display: flex;
+  justify-content: center;
   padding: 0;
+
+  @include mq(tablet) {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  @include mq(desktop) {
+    display: none;
+  }
+
+
 }
 
 .team__member-item {

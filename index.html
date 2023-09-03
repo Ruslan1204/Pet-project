@@ -29,6 +29,7 @@
   <body>
     <!-- <header class="header">
       <div class="container header_container">
+
         <a class="logo" href="./index.html" aria-label="Логотип сайту BarberShop">
           <img src="./header_images/Logo.png" alt="Logo" width="69" height="56" />
         </a>
@@ -181,6 +182,79 @@
               </form>
             </div>
           </div>
+
+          <div class="backdrop is-hidden" data-modal>
+            <div class="backdrop__modal-wrapper">
+              <button class="backdrop__modal-btn" data-modal-close>
+                <svg width="30" height="30">
+                  <use href="./icons/close.svg#icon-close"></use>
+                </svg>
+              </button>
+
+              <div class="menu-mobile js-menu-container" id="menu-mobile">
+                <div class=" menu-mobile__container">
+                  <button
+                    type="button"
+                    class="menu-buttom-btn js-close-menu"
+                    aria-expanded="false"
+                    aria-controls="menu-mobile"
+                  >
+                    <svg
+                      width="40"
+                      height="40"
+                      aria-label="Перемикач мобільного меню"
+                    >
+                      <use
+                        class="menu-buttom-btn__close"
+                        href="./icons/sprite-mobile.svg#icon-menu-close"
+                      ></use>
+                    </svg>
+                  </button>
+                  <ul class="site-mobile list">
+                    <li class="site-mobile__item">
+                      <a
+                        href="./index.html"
+                        class="link list current site-mobile__studio"
+                        >Студія</a
+                      >
+                    </li>
+                    <li class="site-mobile__item">
+                      <a href="./portfolio.html" class="link list">Портфоліо</a>
+                    </li>
+                    <li class="site-mobile__item">
+                      <a href="" class="link list">Контакти</a>
+                    </li>
+                  </ul>
+                  <ul class="contacts-mobile list">
+                    <li class="aside icon-smartphone">
+                      <a href="" class="link list">
+                        <span class="contacts-nav__tel">+38 096 111 11 11</span>
+                      </a>
+                    </li>
+                    <li class="contacts-nav__retreat">
+                      <a href="" class="link list">
+                        <span class="contacts-nav__emeil">info@devstudio.com</span>
+                      </a>
+                    </li>
+                  </ul>
+                  <ul class="social-mobile list">
+                    <li class="social-mobile__link">Instagram</li>
+                    <li class="social-mobile__link">Twitter</li>
+                    <li class="social-mobile__link">Facebook</li>
+                    <li class="social-mobile__link">LinkedIn</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <button type="button" class="menu-buttom js-open-menu" aria-expanded="false">
+
+            
+            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+              <use class="menu-buttom__menu" href="./icons/sprite-mobile.svg#icon-menu"></use>
+            </svg>
+          </button>
         </div>
       </div>
     </header> -->
@@ -232,9 +306,10 @@
               </li>
             </ul>
           </div>
+    
         </div>
       </section> -->
-      <section class="about section">
+      <!-- <section class="about section">
         <div class="container about__container">
           <ul class="about-list list">
             <li class="about-list__item">
@@ -258,7 +333,10 @@
           </ul>
           <div class="about__gruop">
             <p class="about__uppertitle">About</p>
-            <h2 class="about__titel">Best Barbershop in <br/> your city</h2>
+            <h2 class="about__titel">
+              Best Barbershop in <br />
+              your city
+            </h2>
             <p class="about__subtitle">
               If you want to add more confidence to your image, you should definitely visit us.
             </p>
@@ -271,7 +349,7 @@
             <button class="btn btn-mode-light" type="button">ONLINE-BOOKING</button>
           </div>
         </div>
-      </section>
+      </section> -->
       <!-- <section class="price section">
         <div class="container">
           <p class="price__uppertitle">Spend your time with the best masters</p>
@@ -320,46 +398,43 @@
         <div class="container benefits__container">
           <ul class="benefits__list list">
             <div class="benefits__wrapper">
-              <div class="benefits__wrapper">
-                <li class="benefits__item">
-                  <p class="benefits__amount">600<sup class="benefits__amount-color">+</sup></p>
-                  <p class="benefits__text">Satisfied customers <br />per day</p>
-                </li>
-              </div>
-              <div class="benefits__wrapper">
-                <li class="benefits__item">
-                  <p class="benefits__amount">50<sup class="benefits__amount-color">+</sup></p>
-                  <p class="benefits__text">
-                    Awards for excellent <br />
-                    service
-                  </p>
-                </li>
-              </div>
+              <li class="benefits__item">
+                <p class="benefits__amount">600<sup class="benefits__amount-color">+</sup></p>
+                <p class="benefits__text">Satisfied customers <br />per day</p>
+              </li>
+
+              <li class="benefits__item">
+                <p class="benefits__amount">50<sup class="benefits__amount-color">+</sup></p>
+                <p class="benefits__text">
+                  Awards for excellent <br />
+                  service
+                </p>
+              </li>
             </div>
             <div class="benefits__wrapper">
-              <div class="benefits__wrapper">
-                <li class="benefits__item">
-                  <p class="benefits__amount">20<sup class="benefits__amount-color">+</sup></p>
-                  <p class="benefits__text">
-                    Kyiv’s best <br />
-                    barbers
-                  </p>
-                </li>
-              </div>
-              <div class="benefits__wrapper">
-                <li class="benefits__item">
-                  <p class="benefits__amount">100<sup class="benefits__amount-color">+</sup></p>
-                  <p class="benefits__text">
-                    Gifts for regular <br />
-                    customers
-                  </p>
-                </li>
-              </div>
+              <li class="benefits__item">
+                <p class="benefits__amount">20<sup class="benefits__amount-color">+</sup></p>
+                <p class="benefits__text">
+                  Kyiv’s best <br />
+                  barbers
+                </p>
+              </li>
+
+              <li class="benefits__item">
+                <p class="benefits__amount">100<sup class="benefits__amount-color">+</sup></p>
+                <p class="benefits__text">
+                  Gifts for regular <br />
+                  customers
+                </p>
+              </li>
             </div>
           </ul>
           <div class="benefits__gruop">
             <p class="benefits__uppertitle">Old traditional school</p>
-            <h2 class="benefits__titel">¿Why people come to us?</h2>
+            <h2 class="benefits__titel">
+              ¿Why people come <br />
+              to us?
+            </h2>
             <p class="benefits__subtitle">
               Only good things are said about us. But it's better to see and feel 1 time than read
               10 times.
@@ -371,7 +446,7 @@
         <div class="container">
           <p class="team__uppertitle">For true enjoyers of the atmosphere</p>
           <h2 class="team__title">Our barbers</h2>
-          <ul class="team__member-list grid">
+          <ul class="team__member-list grid list">
             <li class="team__member-item list grid-items">
               <img
                 class="team__member-img"
@@ -508,7 +583,7 @@
         <div class="container">
           <p class="gallery__uppertitle">In Latin, "barba" means "beard"</p>
           <h2 class="allery__titel visually-hidden">Gallery job</h2>
-          <ul class="gallery__list grid">
+          <ul class="gallery__list grid list">
             <li class="gallery__item list grid-items">
               <img
                 class="gallery__img"
@@ -624,7 +699,7 @@
         </div>
       </section> -->
     </main>
-    <!-- <footer class="footer section">
+    <footer class="footer section">
       <div class="container">
         <div class="footer__wrapper">
           <p class="footer__copyright">&#169; Copyright 2020</p>
@@ -650,8 +725,8 @@
           </ul>
         </div>
       </div>
-    </footer> -->
-
+    </footer>
     <script src="./modal.js"></script>
+    <script src="./mobile-menu.js"></script>
   </body>
 </html>
