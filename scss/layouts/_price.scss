@@ -4,12 +4,14 @@
 ================================
 */
 .price {
+
+  background-color: var(--black-bg-cl);
   @include mq(desktop) {
     max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
     background-image: url(/price_imeges/fon_price.png);
-    background-color: var(--black-bg-cl);
+    
     background-repeat: no-repeat;
     background-position: center;
 
@@ -56,7 +58,7 @@
 
 .price__list {
   @include mq(mobile-only) {
-    width: 418px;
+    // width: 418px;
     height: 360px;
     margin-bottom: 44px;
   }

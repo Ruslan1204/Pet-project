@@ -81,10 +81,10 @@
 
 .benefits__gruop {
   margin-bottom: 44px;
-  width: 500px;
+  // width: 500px;
 
   @include mq(mobile-only) {
-    width: 418px;
+    // width: 418px;
   }
 }
 

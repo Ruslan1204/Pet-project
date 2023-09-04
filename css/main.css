@@ -1107,13 +1107,15 @@ img {
 | Price
 ================================
 */
+.price {
+  background-color: var(--black-bg-cl);
+}
 @media screen and (min-width: 1280px) {
   .price {
     max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
     background-image: url(/price_imeges/fon_price.png);
-    background-color: var(--black-bg-cl);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1160,7 +1162,6 @@ img {
 
 @media screen and (max-width: 767.98px) {
   .price__list {
-    width: 418px;
     height: 360px;
     margin-bottom: 44px;
   }
@@ -1388,14 +1389,7 @@ img {
 
 .benefits__gruop {
   margin-bottom: 44px;
-  width: 500px;
 }
-@media screen and (max-width: 767.98px) {
-  .benefits__gruop {
-    width: 418px;
-  }
-}
-
 .benefits__uppertitle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2077,7 +2071,7 @@ img {
   background-color: var(--btn-mode-light-cl);
 }
 
-.footer__item {
+.footer__item:not(:last-child) {
   margin-right: 40px;
 }
 
