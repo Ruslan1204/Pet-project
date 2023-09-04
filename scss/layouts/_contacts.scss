@@ -19,9 +19,9 @@
 }
 
 .contacts__left-side {
-  @include mq(mobile-only) {
-    width: 418px;
-  }
+  // @include mq(mobile-only) {
+  //   width: 418px;
+  // }
   // width: 570px;
   // margin-right: 130px;
 }
