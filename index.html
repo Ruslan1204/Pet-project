@@ -30,7 +30,10 @@
     <!-- <header class="header">
       <div class="container header_container">
         <a class="logo" href="./index.html" aria-label="Логотип сайту BarberShop">
-          <img src="./header_images/Logo.png" alt="Logo" width="69" height="56" />
+          <svg width="68" heigth="56">
+            <use href="./images/icons/sprite-mobile.svg#icon-logo"></use>
+          </svg>
+          <img src="./images/header_images/Logo.png" alt="Logo" width="69" height="56" />
         </a>
 
         <nav class="navigation">
@@ -60,7 +63,7 @@
             <div class="backdrop__modal-wrapper">
               <button class="backdrop__modal-btn" data-modal-close>
                 <svg width="30" height="30">
-                  <use href="./icons/close.svg#icon-close"></use>
+                  <use href="./images/icons/close.svg#icon-close"></use>
                 </svg>
               </button>
 
@@ -78,7 +81,7 @@
                   <span class="form__warning">
                     The name must be at least 3 characters long.
                     <svg class="form__warning-icon" width="20" height="20">
-                      <use href="./icons/sprite-form.svg#icon-warning"></use>
+                      <use href="./images/icons/sprite-form.svg#icon-warning"></use>
                     </svg>
                   </span>
                   <span class="form__error">
@@ -88,7 +91,7 @@
                     </svg>
                   </span>
                   <svg class="form__modal-icon" width="20" height="20">
-                    <use href="./icons/sprite-form.svg#icon-user"></use>
+                    <use href="./images/icons/sprite-form.svg#icon-user"></use>
                   </svg>
                 </label>
                 <label class="form__modal-group">
@@ -103,17 +106,17 @@
                   <span class="form__warning">
                     The name must be at least 3 characters long.
                     <svg class="form__warning-icon" width="20" height="20">
-                      <use href="./icons/sprite-form.svg#icon-warning"></use>
+                      <use href="./images/icons/sprite-form.svg#icon-warning"></use>
                     </svg>
                   </span>
                   <span class="form__error">
                     The entered data is incorrect.
                     <svg class="form__error-icon" width="20" height="20">
-                      <use href="./icons/sprite-form.svg#icon-error"></use>
+                      <use href="./images/icons/sprite-form.svg#icon-error"></use>
                     </svg>
                   </span>
                   <svg class="form__modal-icon" width="20" height="20">
-                    <use href="./icons/sprite-form.svg#icon-phone"></use>
+                    <use href="./images/icons/sprite-form.svg#icon-phone"></use>
                   </svg>
                 </label>
                 <label class="form__modal-group">
@@ -128,17 +131,17 @@
                   <span class="form__warning">
                     The name must be at least 3 characters long.
                     <svg class="form__warning-icon" width="20" height="20">
-                      <use href="./icons/sprite-form.svg#icon-warning"></use>
+                      <use href="./images/icons/sprite-form.svg#icon-warning"></use>
                     </svg>
                   </span>
                   <span class="form__error">
                     The entered data is incorrect.
                     <svg class="form__error-icon" width="20" height="20">
-                      <use href="./icons/sprite-form.svg#icon-error"></use>
+                      <use href="./images/icons/sprite-form.svg#icon-error"></use>
                     </svg>
                   </span>
                   <svg class="form__modal-icon" width="20" height="20">
-                    <use href="./icons/sprite-form.svg#icon-mail"></use>
+                    <use href="./images/icons/sprite-form.svg#icon-mail"></use>
                   </svg>
                 </label>
 
@@ -152,7 +155,7 @@
                       checked
                     />
                     <svg class="form__pay-option" width="50" height="50">
-                      <use href="./icons/sprite-form.svg#icon-cc-mastercard"></use>
+                      <use href="./images/icons/sprite-form.svg#icon-cc-mastercard"></use>
                     </svg>
                   </label>
                   <label class="form__pay-group">
@@ -162,7 +165,7 @@
                       name="user-pay"
                     />
                     <svg class="form__pay-option" width="50" height="50">
-                      <use href="./icons/sprite-form.svg#icon-cc-visa"></use>
+                      <use href="./images/icons/sprite-form.svg#icon-cc-visa"></use>
                     </svg>
                   </label>
                 </div>
@@ -171,7 +174,7 @@
                   <input class="form__checkbox visually-hidden" type="checkbox" />
                   <span class="form__custom-checkbox">
                     <svg class="form__custom-checkbox-icon" width="18" height="18">
-                      <use href="./icons/sprite-form.svg#icon-check"></use>
+                      <use href="./images/icons/sprite-form.svg#icon-check"></use>
                     </svg>
                   </span>
                   <span class="form__policy-desc"
@@ -185,76 +188,11 @@
               </form>
             </div>
           </div>
-
-          <div class="backdrop is-hidden" data-modal>
-            <div class="backdrop__modal-wrapper">
-              <button class="backdrop__modal-btn" data-modal-close>
-                <svg width="30" height="30">
-                  <use href="./icons/close.svg#icon-close"></use>
-                </svg>
-              </button>
-
-              <div class="menu-mobile js-menu-container" id="menu-mobile">
-                <div class="menu-mobile__container">
-                  <button
-                    type="button"
-                    class="menu-buttom-btn js-close-menu"
-                    aria-expanded="false"
-                    aria-controls="menu-mobile"
-                  >
-                    <svg width="40" height="40" aria-label="Перемикач мобільного меню">
-                      <use
-                        class="menu-buttom-btn__close"
-                        href="./icons/sprite-mobile.svg#icon-menu-close"
-                      ></use>
-                    </svg>
-                  </button>
-                  <ul class="site-mobile list">
-                    <li class="site-mobile__item">
-                      <a href="./index.html" class="link list current site-mobile__studio"
-                        >Студія</a
-                      >
-                    </li>
-                    <li class="site-mobile__item">
-                      <a href="./portfolio.html" class="link list">Портфоліо</a>
-                    </li>
-                    <li class="site-mobile__item">
-                      <a href="" class="link list">Контакти</a>
-                    </li>
-                  </ul>
-                  <ul class="contacts-mobile list">
-                    <li class="aside icon-smartphone">
-                      <a href="" class="link list">
-                        <span class="contacts-nav__tel">+38 096 111 11 11</span>
-                      </a>
-                    </li>
-                    <li class="contacts-nav__retreat">
-                      <a href="" class="link list">
-                        <span class="contacts-nav__emeil">info@devstudio.com</span>
-                      </a>
-                    </li>
-                  </ul>
-                  <ul class="social-mobile list">
-                    <li class="social-mobile__link">Instagram</li>
-                    <li class="social-mobile__link">Twitter</li>
-                    <li class="social-mobile__link">Facebook</li>
-                    <li class="social-mobile__link">LinkedIn</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <button type="button" class="menu-buttom js-open-menu" aria-expanded="false">
-            <svg width="40" height="40" aria-label="Перемикач мобільного меню">
-              <use class="menu-buttom__menu" href="./icons/sprite-mobile.svg#icon-menu"></use>
-            </svg>
-          </button>
         </div>
       </div>
     </header> -->
     <main>
-      <!-- <section class="hero section">
+      <section class="hero section">
         <div class="container">
           <div class="hero__left-side">
             <ul class="hero__list list hero__socials-list">
@@ -288,7 +226,7 @@
           <div class="slider">
             <ul class="slider__pagination">
               <li class="list">
-                <img src="./slider_images/Slider Navigation.png" alt="slider_navigation" />
+                <img src="./images/slider_images/Slider Navigation.png" alt="slider_navigation" />
               </li>
             </ul>
 
@@ -302,27 +240,67 @@
             </ul>
           </div>
         </div>
-      </section> -->
-      <section class="about section">
+      </section>
+      <!-- <section class="about section">
         <div class="container about__container">
           <ul class="about-list list">
             <li class="about-list__item">
-              <img
-                class="about-list__img"
-                src="./about_images/img 1.jpg"
-                alt="beard shaving"
-                width="270"
-                height="445"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/about_images/about-1_ds.jpg    1x,
+                    ./images/about_images/about-1_ds@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/about_images/about-1_tb.jpg    1x,
+                    ./images/about_images/about-1_tb@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source />
+                <img
+                  class="about-list__img"
+                  src="./images/about_images/about-1_tb.jpg"
+                  alt="beard shaving"
+                  width="330"
+                  height="235"
+                />
+              </picture>
             </li>
             <li class="about-list__item">
-              <img
-                class="about-list__img"
-                src="./about_images/img 2.jpg"
-                alt="head shaving"
-                width="270"
-                height="445"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/about_images/about-2_ds.jpg    1x,
+                    ./images/about_images/about-2_ds@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/about_images/about-2_tb.jpg    1x,
+                    ./images/about_images/about-2_tb@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source />
+                <img
+                  class="about-list__img"
+                  src="./images/about_images/about-2_tb.jpg"
+                  alt="head shaving"
+                  width="330"
+                  height="235"
+                />
+              </picture>
             </li>
           </ul>
           <div class="about__gruop">
@@ -343,8 +321,8 @@
             <button class="btn btn-mode-light" type="button">ONLINE-BOOKING</button>
           </div>
         </div>
-      </section>
-      <section class="price section">
+      </section> -->
+      <!-- <section class="price section">
         <div class="container">
           <p class="price__uppertitle">Spend your time with the best masters</p>
           <h2 class="price__titel">Services and prices</h2>
@@ -387,8 +365,8 @@
           </ul>
           <button class="btn btn-mode-dark price__button" type="button">online-booking</button>
         </div>
-      </section>
-      <section class="benefits section">
+      </section> -->
+      <!-- <section class="benefits section">
         <div class="container benefits__container">
           <ul class="benefits__list list">
             <div class="benefits__wrapper">
@@ -435,20 +413,49 @@
             </p>
           </div>
         </div>
-      </section>
-      <section class="team section">
+      </section> -->
+      <!-- <section class="team section">
         <div class="container">
           <p class="team__uppertitle">For true enjoyers of the atmosphere</p>
           <h2 class="team__title">Our barbers</h2>
           <ul class="team__member-list grid list">
             <li class="team__member-item list grid-items">
-              <img
-                class="team__member-img"
-                src="./member_images/img1.jpg"
-                alt="clipper haircut from behind"
-                width="370"
-                height="346"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/member_images/member-1_ds.jpg    1x,
+                    ./images/member_images/member-1_ds2@x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/member_images/member-1_tb.jpg    1x,
+                    ./images/member_images/member-1_tb@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/member_images/member-1_mb.jpg    1x,
+                    ./images/member_images/member-1_mb@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source />
+                <img
+                  class="team__member-img"
+                  src="./images/member_images/member-1_mb.jpg"
+                  alt="clipper haircut from behind"
+                  width="418"
+                  height="346"
+                />
+              </picture>
               <div class="team__member-gruop">
                 <h3 class="team__member-title">John Smith</h3>
                 <p class="team__member-position">Extreme Barber</p>
@@ -456,28 +463,28 @@
                   <li class="socials-list__item list">
                     <a class="socials-list__link" href="#">
                       <svg class="socials-list__icon" width="20" height="20">
-                        <use href="./icons/sprite.svg#icon-instagram"></use>
+                        <use href="./images/icons/sprite.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials-list__item list">
                     <a class="socials-list__link" href="#">
                       <svg class="socials-list__icon" width="20" height="20">
-                        <use href="./icons/sprite.svg#icon-twitter"></use>
+                        <use href="./images/icons/sprite.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials-list__item list">
                     <a class="socials-list__link" href="#">
                       <svg class="socials-list__icon" width="20" height="20">
-                        <use href="./icons/sprite.svg#icon-facebook"></use>
+                        <use href="./images/icons/sprite.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials-list__item list">
                     <a class="socials-list__link" href="#">
                       <svg class="socials-list__icon" width="20" height="20">
-                        <use href="./icons/sprite.svg#icon-linkedin"></use>
+                        <use href="./images/icons/sprite.svg#icon-linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -485,13 +492,43 @@
               </div>
             </li>
             <li class="team__member-item list grid-items">
-              <img
-                class="team__member-img"
-                src="./member_images/img2.jpg"
-                alt="side clipper haircut"
-                width="370"
-                height="346"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/member_images/member-2_ds.jpg    1x,
+                    ./images/member_images/member-2_ds@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/member_images/member-2_tb.jpg    1x,
+                    ./images/member_images/member-2_tb@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/member_images/member-2_mb.jpg    1x,
+                    ./images/member_images/member-2_mb@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source />
+                <img
+                  class="team__member-img"
+                  src="./images/member_images/member-2_mb.jpg"
+                  alt="side clipper haircut"
+                  width="418"
+                  height="346"
+                />
+              </picture>
+
               <div class="team__member-gruop">
                 <h3 class="team__member-title">Michele Doe</h3>
                 <p class="team__member-position">Extreme Barber</p>
@@ -499,28 +536,28 @@
                   <li class="socials-list__item list">
                     <a class="socials-list__link" href="#">
                       <svg class="socials-list__icon" width="20" height="20">
-                        <use href="./icons/sprite.svg#icon-instagram"></use>
+                        <use href="./images/icons/sprite.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials-list__item list">
                     <a class="socials-list__link" href="#">
                       <svg class="socials-list__icon" width="20" height="20">
-                        <use href="./icons/sprite.svg#icon-twitter"></use>
+                        <use href="./images/icons/sprite.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials-list__item list">
                     <a class="socials-list__link" href="#">
                       <svg class="socials-list__icon" width="20" height="20">
-                        <use href="./icons/sprite.svg#icon-facebook"></use>
+                        <use href="./images/icons/sprite.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials-list__item list">
                     <a class="socials-list__link" href="#">
                       <svg class="socials-list__icon" width="20" height="20">
-                        <use href="./icons/sprite.svg#icon-linkedin"></use>
+                        <use href="./images/icons/sprite.svg#icon-linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -528,13 +565,43 @@
               </div>
             </li>
             <li class="team__member-item list grid-items">
-              <img
-                class="team__member-img"
-                src="./member_images/img3.jpg"
-                alt="hair styling"
-                width="370"
-                height="346"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/member_images/member-3_ds.jpg    1x,
+                    ./images/member_images/member-3_ds@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/member_images/member-3_tb.jpg    1x,
+                    ./images/member_images/member-3_tb@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/member_images/member-3_mb.jpg    1x,
+                    ./images/member_images/member-3_mb@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source />
+                <img
+                  class="team__member-img"
+                  src="./images/member_images/member-3_mb.jpg"
+                  alt="hair styling"
+                  width="418"
+                  height="346"
+                />
+              </picture>
+
               <div class="team__member-gruop">
                 <h3 class="team__member-title">Alan Black</h3>
                 <p class="team__member-position">Extreme Barber</p>
@@ -542,28 +609,28 @@
                   <li class="socials-list__item list">
                     <a class="socials-list__link" href="#">
                       <svg class="socials-list__icon" width="20" height="20">
-                        <use href="./icons/sprite.svg#icon-instagram"></use>
+                        <use href="./images/icons/sprite.svg#icon-instagram"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials-list__item list">
                     <a class="socials-list__link" href="#">
                       <svg class="socials-list__icon" width="20" height="20">
-                        <use href="./icons/sprite.svg#icon-twitter"></use>
+                        <use href="./images/icons/sprite.svg#icon-twitter"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials-list__item list">
                     <a class="socials-list__link" href="#">
                       <svg class="socials-list__icon" width="20" height="20">
-                        <use href="./icons/sprite.svg#icon-facebook"></use>
+                        <use href="./images/icons/sprite.svg#icon-facebook"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="socials-list__item list">
                     <a class="socials-list__link" href="#">
                       <svg class="socials-list__icon" width="20" height="20">
-                        <use href="./icons/sprite.svg#icon-linkedin"></use>
+                        <use href="./images/icons/sprite.svg#icon-linkedin"></use>
                       </svg>
                     </a>
                   </li>
@@ -572,52 +639,172 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section class="gallery section">
+      </section> -->
+      <!-- <section class="gallery section">
         <div class="container">
           <p class="gallery__uppertitle">In Latin, "barba" means "beard"</p>
           <h2 class="allery__titel visually-hidden">Gallery job</h2>
           <ul class="gallery__list grid list">
             <li class="gallery__item list grid-items">
-              <img
-                class="gallery__img"
-                src="./gallery_images/Rectangle 1.jpg"
-                alt="cuts his head"
-                width="270"
-                height="360"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/gallery_images/gallery-1_ds.jpg    1x,
+                    ./images/gallery_images/gallery-1_ds@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/gallery_images/gallery-1_tb.png    1x,
+                    ./images/gallery_images/gallery-1_tb@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/gallery_images/gallery-1_mb.jpg    1x,
+                    ./images/gallery_images/gallery-1_mb@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source />
+                <img
+                  class="gallery__img"
+                  src="./images/gallery_images/gallery-1_mb.jpg"
+                  alt="cuts his head"
+                  width="418"
+                  height="360"
+                  loading="lazy"
+                />
+              </picture>
             </li>
             <li class="gallery__item list grid-items">
-              <img
-                class="gallery__img"
-                src="./gallery_images/Rectangle 2.jpg"
-                alt="facial shaving"
-                width="270"
-                height="360"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/gallery_images/gallery-2_ds.jpg    1x,
+                    ./images/gallery_images/gallery-2_ds@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/gallery_images/gallery-2_tb.png    1x,
+                    ./images/gallery_images/gallery-2_tb@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/gallery_images/gallery-2_mb.jpg    1x,
+                    ./images/gallery_images/gallery-2_mb@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source />
+                <img
+                  class="gallery__img"
+                  src="./images/gallery_images/gallery-2_mb.jpg"
+                  alt="cuts his head"
+                  width="418"
+                  height="360"
+                  loading="lazy"
+                />
+              </picture>
             </li>
             <li class="gallery__item list grid-items">
-              <img
-                class="gallery__img"
-                src="./gallery_images/Rectangle 3.jpg"
-                alt="a towel on the face"
-                width="270"
-                height="360"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/gallery_images/gallery-3_ds.jpg    1x,
+                    ./images/gallery_images/gallery-3_ds@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/gallery_images/gallery-3_tb.png    1x,
+                    ./images/gallery_images/gallery-3_tb@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/gallery_images/gallery-3_mb.jpg    1x,
+                    ./images/gallery_images/gallery-3_mb@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source />
+                <img
+                  class="gallery__img"
+                  src="./images/gallery_images/gallery-3_mb.jpg"
+                  alt="a towel on the face"
+                  width="418"
+                  height="360"
+                  loading="lazy"
+                />
+              </picture>
             </li>
             <li class="gallery__item list grid-items">
-              <img
-                class="gallery__img"
-                src="./gallery_images/Rectangle 4.jpg"
-                alt="shaves the contour"
-                width="270"
-                height="360"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1280px)"
+                  srcset="
+                    ./images/gallery_images/gallery-4_ds.jpg    1x,
+                    ./images/gallery_images/gallery-4_ds@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/gallery_images/gallery-4_tb.png    1x,
+                    ./images/gallery_images/gallery-4_tb@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/gallery_images/gallery-4_mb.jpg    1x,
+                    ./images/gallery_images/gallery-4_mb@2x.jpg 2x
+                  "
+                  type="image/jpg"
+                />
+                <source />
+                <img
+                  class="gallery__img"
+                  src="./images/gallery_images/gallery-4_mb.jpg"
+                  alt="shaves the contour"
+                  width="418"
+                  height="360"
+                  loading="lazy"
+                />
+              </picture>
             </li>
           </ul>
         </div>
-      </section>
-      <section class="contacts section">
+      </section> -->
+      <!-- <section class="contacts section">
         <div class="container contacts__container">
           <div class="contacts__left-side">
             <h2 class="contacts__left-title">Online-booking</h2>
@@ -663,7 +850,7 @@
                 <ul class="list">
                   <li class="contacts__link">
                     <svg class="contacts__icon" width="20" height="20">
-                      <use href="./icons/sprite-form.svg#icon-location"></use>
+                      <use href="./images/icons/sprite-form.svg#icon-location"></use>
                     </svg>
                     <a
                       href="https://goo.gl/maps/3wkYkbQ8jReYCoed6"
@@ -676,13 +863,13 @@
                   </li>
                   <li class="contacts__link">
                     <svg class="contacts__icon" width="20" height="20">
-                      <use href="./icons/sprite-form.svg#icon-phone"></use>
+                      <use href="./images/icons/sprite-form.svg#icon-phone"></use>
                     </svg>
                     <a href="tel:+380441111111" class="contacts__link-item">+38 044 111 11 11</a>
                   </li>
                   <li class="contacts__link">
                     <svg class="contacts__icon" width="20" height="20">
-                      <use href="./icons/sprite-form.svg#icon-mail"></use>
+                      <use href="./images/icons/sprite-form.svg#icon-mail"></use>
                     </svg>
                     <a href="mailto:info@devstudio.com" class="contacts__link-item"
                       >info@devstudio.com</a
@@ -698,9 +885,9 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
-    <footer class="footer section">
+    <!-- <footer class="footer section">
       <div class="container">
         <div class="footer__wrapper">
           <p class="footer__copyright">&#169;Copyright 2020</p>
@@ -726,7 +913,86 @@
           </ul>
         </div>
       </div>
-    </footer>
+    </footer> -->
+
+    <!-- Mobile menu -->
+    <!-- <button type="button" class="menu-buttom js-open-menu" aria-expanded="false" data-modal-open>
+      <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+        <use class="menu-buttom__menu" href="./images/icons/sprite-mobile.svg#icon-menu"></use>
+      </svg>
+    </button> -->
+    <!-- <div class="backdrop is-hidden" data-modal>
+      <div class="menu-mobile js-menu-container" id="menu-mobile">
+        <div class="menu-mobile__container">
+          <div class="menu-mobile__wrapper">
+            <button
+              type="button"
+              class="menu-buttom-btn js-close-menu"
+              aria-expanded="false"
+              aria-controls="menu-mobile"
+              data-modal-close
+            >
+              <svg
+                class="menu-buttom-btn__close"
+                width="40"
+                height="40"
+                aria-label="Перемикач мобільного меню"
+              >
+                <use href="./images/icons/sprite-mobile.svg#icon-menu-close"></use>
+              </svg>
+            </button>
+            <ul class="site-mobile list">
+              <li class="site-mobile__item">
+                <a
+                  href="./index.html"
+                  class="site-mobile__link link list current site-mobile__studio"
+                  >About</a
+                >
+              </li>
+              <li class="site-mobile__item">
+                <a href="./index.html" class="site-mobile__link link list">Services and prices</a>
+              </li>
+              <li class="site-mobile__item">
+                <a href="/index.html" class="site-mobile__link link list">Barbers</a>
+              </li>
+              <li class="site-mobile__item">
+                <a href="/index.html" class="site-mobile__link link list">Contacts</a>
+              </li>
+            </ul>
+            <ul class="contacts-mobile list">
+              <li class="aside icon-smartphone">
+                <a href="" class="link list">
+                  <span class="contacts-nav__tel">+38 044 111 11 11</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="footer__list list">
+              <div>
+                <li class="footer__item">
+                  <a
+                    class="footer__link"
+                    href="https://Instagram.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Instagram</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a
+                    class="footer__link"
+                    href="https://Youtube.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Youtube</a
+                  >
+                </li>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
     <script src="./modal.js"></script>
     <script src="./mobile-menu.js"></script>
   </body>

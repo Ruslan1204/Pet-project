@@ -46,9 +46,13 @@
   flex-direction: column;
   width: 170px;
   height: 133px;
-  margin-right: 30px;
+  
 
   background-color: #f7f7f7;
+}
+
+.benefits__item:not(:last-child){
+  margin-right: 30px;
 }
 
 .benefits__amount {

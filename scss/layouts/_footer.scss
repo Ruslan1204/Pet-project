@@ -40,6 +40,8 @@
 
   @include mq(mobile-only) {
     margin-bottom: 40px;
+
+    align-items: baseline;
   }
 
 

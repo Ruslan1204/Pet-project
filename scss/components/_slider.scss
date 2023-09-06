@@ -1,3 +1,9 @@
+.slider{
+  @include mq(mobile-only){
+    display: none;
+  }
+}
+
 .slider__pagination {
     position: absolute;
     top: 60%;

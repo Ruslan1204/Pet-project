@@ -6,13 +6,34 @@
 
 .contacts {
   background-color: var(--dark-bg-cl);
+  
+
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  background-image: url(/images/contacts_images/contacts-1_mb.png);
+  background-position: 50% bottom;
+
+  @include mq(retina) {
+    background-image: url(/images/contacts_images/contacts-1_mb@2x.png);
+  }
+
+  @include mq(tablet) {
+    background-image: url(/images/contacts_images/contacts-1_tb.png);
+
+    @include mq(retina) {
+      background-image: url(/images/contacts_images/contacts-1_tb@2x.png);
+    }
+  }
 
   @include mq(desktop) {
     height: 634px;
-    background-image: url(/contacts_images/Bg.png);
-    background-size: contain;
-    background-repeat: no-repeat;
+    background-image: url(/images/contacts_images/contacts-1_ds.png);
     background-position: top left calc(50% + 390px);
+
+    @include mq(retina) {
+      background-image: url(/images/contacts_images/contacts-1_ds@2x.png);
+    }
   }
 }
 
@@ -190,7 +211,7 @@
     display: flex;
 
     flex-direction: column;
-    height: 448px;
+    // height: 448px;
   }
 
   @include mq(desktop) {
@@ -215,9 +236,9 @@
   }
 }
 
-.contacts__right-wrapper{
+.contacts__right-wrapper {
   @include mq(tablet-only) {
-  display: flex;
+    display: flex;
   }
 }
 

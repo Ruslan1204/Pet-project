@@ -4,19 +4,44 @@
 ================================
 */
 .price {
+  // background-color: var(--black-bg-cl);
 
-  background-color: var(--black-bg-cl);
-  @include mq(desktop) {
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
-    background-image: url(/price_imeges/fon_price.png);
-    
-    background-repeat: no-repeat;
-    background-position: center;
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
 
-    background-size: cover;
+  background-image: url(/images/price_imeges/price-1_mb.png),
+    linear-gradient(to bottom, #111319, #111319);
+
+  @include mq(retina) {
+    background-image: url(/images/price_imeges/price-2_mb@2x.png),
+      linear-gradient(to bottom, #111319, #111319);
   }
+
+  @include mq(tablet) {
+    background-image: url(/images/price_imeges/price-1_tb.png),
+      linear-gradient(to bottom, #111319, #111319);
+
+    @include mq(retina) {
+      background-image: url(/images/price_imeges/price-2_tb@2x.png),
+        linear-gradient(to bottom, #111319, #111319);
+    }
+  }
+
+  @include mq(desktop) {
+    background-image: url(/images/price_imeges/price-1_ds.png),
+      linear-gradient(to bottom, #111319, #111319);
+
+    @include mq(retina) {
+      background-image: url(/images/price_imeges/price-2_ds@2x.png),
+        linear-gradient(to bottom, #111319, #111319);
+    }
+  }
+
+  background-repeat: no-repeat;
+  background-position: center;
+
+  background-size: cover;
 }
 
 .price__uppertitle {
