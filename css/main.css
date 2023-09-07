@@ -835,7 +835,6 @@ img {
 
 .navigation__item {
   margin-right: 30px;
-  @i;
 }
 .navigation__item:last-child {
   margin-right: 0px;
