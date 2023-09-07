@@ -15,14 +15,14 @@
 
   height: 580px;
 
-  // background-color: #191c26;
+  background-color: #191c26;
 
   background-position: top right, center;
 
   background-image: url(/images/hero_images/hero-mb.jpg),
     linear-gradient(to right, var(--white-cl) 17%, var(--dark-bg-cl) 17%);
 
-    background-size: 480px 580px, contain;
+  background-size: 480px 580px, contain;
 
   @include mq(retina) {
     background-image: url(/images/hero_images/hero-mb@2x.jpg);
