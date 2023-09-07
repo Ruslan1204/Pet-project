@@ -19,8 +19,7 @@
 
   background-position: top right, center;
 
-  background-image: url(/images/hero_images/hero-mb.jpg),
-    linear-gradient(to right, var(--white-cl) 17%, var(--dark-bg-cl) 17%);
+  background-image: url(/images/hero_images/hero-mb.jpg);
 
   background-size: 480px 580px, contain;
 
@@ -29,7 +28,8 @@
   }
 
   @include mq(tablet) {
-    background-image: url(/images/hero_images/hero-tb.jpg);
+    background-image: url(/images/hero_images/hero-tb.jpg),
+      linear-gradient(to right, var(--white-cl) 17%, var(--dark-bg-cl) 17%);
 
     height: 680px;
 
