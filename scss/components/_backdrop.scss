@@ -31,12 +31,13 @@
   visibility: hidden;
 }
 
-.backdrop.is-hidden .backdrop__modal-wrapper {
+.backdrop.is-hidden .backdrop__modal-wrapper
+ {
   transform: translate(-50%, -50%) scale(0.4);
   opacity: 0;
 }
 
-.backdrop.is-hidden .menu-mobile {
+.backdrop.is-hidden .menu-mobile{
   opacity: 0;
 }
 
@@ -45,7 +46,7 @@
   opacity: 1;
 }
 
-.backdrop.is-hidden .menu-mobile {
+.backdrop.is-hidden .menu-mobile{
   opacity: 1;
 }
 

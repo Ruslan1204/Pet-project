@@ -7,7 +7,7 @@
 .slider__pagination {
     position: absolute;
     top: 60%;
-    right: 0px;
+    right: 15px;
     transform: translateY(-50%);
   }
   
@@ -17,8 +17,14 @@
   
   .slider__controls {
     position: absolute;
-    right: 0;
-    bottom: -180px;
+    right: 15px;
+    bottom: -220px;
+
+    @include mq(tablet-only){
+      bottom: -260px;
+    }
+
+
   }
   
   .slider__btn {

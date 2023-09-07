@@ -27,17 +27,105 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header_container">
+        <!-- <div class="header__mobile-header">
+
+        </div> -->
         <a class="logo" href="./index.html" aria-label="Логотип сайту BarberShop">
           <svg width="68" heigth="56">
-            <use href="./images/icons/sprite-mobile.svg#icon-logo"></use>
+            <use href="./images/icons/sprite-mobile.svg#icon-Logo"></use>
           </svg>
-          <img src="./images/header_images/Logo.png" alt="Logo" width="69" height="56" />
         </a>
 
+        <button
+          type="button"
+          class="menu-buttom js-open-menu"
+          aria-expanded="false"
+          data-modal-open
+        >
+          <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+            <use
+              class="menu-buttom__menu"
+              href="./images/icons/sprite-mobile.svg#icon-menu"
+            ></use>
+          </svg>
+        </button>
+
+        <div class="backdrop is-hidden" data-modal>
+          <div class="menu-mobile js-menu-container" id="menu-mobile">
+            <div class="menu-mobile__container">
+              <div class="menu-mobile__wrapper">
+                <button
+                  type="button"
+                  class="menu-buttom-btn js-close-menu"
+                  aria-expanded="false"
+                  aria-controls="menu-mobile"
+                  data-modal-close
+                >
+                  <svg
+                    class="menu-buttom-btn__close"
+                    width="40"
+                    height="40"
+                    aria-label="Перемикач мобільного меню"
+                  >
+                    <use href="./images/icons/sprite-mobile.svg#icon-menu-close"></use>
+                  </svg>
+                </button>
+                <ul class="site-mobile list">
+                  <li class="site-mobile__item">
+                    <a
+                      href="./index.html"
+                      class="site-mobile__link link list current site-mobile__studio"
+                      >About</a
+                    >
+                  </li>
+                  <li class="site-mobile__item">
+                    <a href="./index.html" class="site-mobile__link link list">Services and prices</a>
+                  </li>
+                  <li class="site-mobile__item">
+                    <a href="/index.html" class="site-mobile__link link list">Barbers</a>
+                  </li>
+                  <li class="site-mobile__item">
+                    <a href="/index.html" class="site-mobile__link link list">Contacts</a>
+                  </li>
+                </ul>
+                <ul class="contacts-mobile list">
+                  <li class="aside icon-smartphone">
+                    <a href="" class="link list">
+                      <span class="contacts-nav__tel">+38 044 111 11 11</span>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="footer__list list">
+                  <div>
+                    <li class="footer__item">
+                      <a
+                        class="footer__link"
+                        href="https://Instagram.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Instagram</a
+                      >
+                    </li>
+                    <li class="footer__item">
+                      <a
+                        class="footer__link"
+                        href="https://Youtube.com"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        >Youtube</a
+                      >
+                    </li>
+                  </div>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <nav class="navigation">
-          <ul class="navigation__list">
+          <ul class="navigation__list list">
             <li class="navigation__item list">
               <a class="link navigation__link" href="#">About</a>
             </li>
@@ -190,7 +278,7 @@
           </div>
         </div>
       </div>
-    </header> -->
+    </header>
     <main>
       <section class="hero section">
         <div class="container">
@@ -916,82 +1004,8 @@
     </footer> -->
 
     <!-- Mobile menu -->
-    <!-- <button type="button" class="menu-buttom js-open-menu" aria-expanded="false" data-modal-open>
-      <svg width="40" height="40" aria-label="Перемикач мобільного меню">
-        <use class="menu-buttom__menu" href="./images/icons/sprite-mobile.svg#icon-menu"></use>
-      </svg>
-    </button> -->
-    <!-- <div class="backdrop is-hidden" data-modal>
-      <div class="menu-mobile js-menu-container" id="menu-mobile">
-        <div class="menu-mobile__container">
-          <div class="menu-mobile__wrapper">
-            <button
-              type="button"
-              class="menu-buttom-btn js-close-menu"
-              aria-expanded="false"
-              aria-controls="menu-mobile"
-              data-modal-close
-            >
-              <svg
-                class="menu-buttom-btn__close"
-                width="40"
-                height="40"
-                aria-label="Перемикач мобільного меню"
-              >
-                <use href="./images/icons/sprite-mobile.svg#icon-menu-close"></use>
-              </svg>
-            </button>
-            <ul class="site-mobile list">
-              <li class="site-mobile__item">
-                <a
-                  href="./index.html"
-                  class="site-mobile__link link list current site-mobile__studio"
-                  >About</a
-                >
-              </li>
-              <li class="site-mobile__item">
-                <a href="./index.html" class="site-mobile__link link list">Services and prices</a>
-              </li>
-              <li class="site-mobile__item">
-                <a href="/index.html" class="site-mobile__link link list">Barbers</a>
-              </li>
-              <li class="site-mobile__item">
-                <a href="/index.html" class="site-mobile__link link list">Contacts</a>
-              </li>
-            </ul>
-            <ul class="contacts-mobile list">
-              <li class="aside icon-smartphone">
-                <a href="" class="link list">
-                  <span class="contacts-nav__tel">+38 044 111 11 11</span>
-                </a>
-              </li>
-            </ul>
-            <ul class="footer__list list">
-              <div>
-                <li class="footer__item">
-                  <a
-                    class="footer__link"
-                    href="https://Instagram.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Instagram</a
-                  >
-                </li>
-                <li class="footer__item">
-                  <a
-                    class="footer__link"
-                    href="https://Youtube.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >Youtube</a
-                  >
-                </li>
-              </div>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </div> -->
+
+
 
     <script src="./modal.js"></script>
     <script src="./mobile-menu.js"></script>
