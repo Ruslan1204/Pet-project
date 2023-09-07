@@ -925,7 +925,8 @@ img {
 }
 @media screen and (min-width: 1280px) {
   .hero {
-    background-image: url(/images/hero_images/hero-ds.jpg);
+    background-image: url(/images/hero_images/hero-ds.jpg), -webkit-gradient(linear, left top, right top, color-stop(17%, var(--white-cl)), color-stop(17%, var(--dark-bg-cl)));
+    background-image: url(/images/hero_images/hero-ds.jpg), linear-gradient(to right, var(--white-cl) 17%, var(--dark-bg-cl) 17%);
     background-size: 1100px 680px, contain;
   }
 }
