@@ -19,16 +19,16 @@
 
   background-position: top right, center;
 
-  background-image: url(/images/hero_images/hero-mb.jpg);
+  background-image: url(../images/hero_images/hero-mb.jpg);
 
   background-size: 480px 580px, contain;
 
   @include mq(retina) {
-    background-image: url(/images/hero_images/hero-mb@2x.jpg);
+    background-image: url(../images/hero_images/hero-mb@2x.jpg);
   }
 
   @include mq(tablet) {
-    background-image: url(/images/hero_images/hero-tb.jpg),
+    background-image: url(../images/hero_images/hero-tb.jpg),
       linear-gradient(to right, var(--white-cl) 17%, var(--dark-bg-cl) 17%);
 
     height: 680px;
@@ -36,19 +36,19 @@
     background-size: 584px 680px, contain;
 
     @include mq(retina) {
-      background-image: url(/images/hero_images/hero-tb@2x.jpg),
+      background-image: url(../images/hero_images/hero-tb@2x.jpg),
         linear-gradient(to right, var(--white-cl) 17%, var(--dark-bg-cl) 17%);
     }
   }
 
   @include mq(desktop) {
-    background-image: url(/images/hero_images/hero-ds.jpg),
+    background-image: url(../images/hero_images/hero-ds.jpg),
       linear-gradient(to right, var(--white-cl) 17%, var(--dark-bg-cl) 17%);
 
     background-size: 1100px 680px, contain;
 
     @include mq(retina) {
-      background-image: url(/images/hero_images/hero-ds@2x.jpg),
+      background-image: url(../images/hero_images/hero-ds@2x.jpg),
         linear-gradient(to right, var(--white-cl) 17%, var(--dark-bg-cl) 17%);
     }
   }
