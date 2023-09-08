@@ -1782,6 +1782,9 @@ img {
 */
 .contacts {
   background-color: var(--dark-bg-cl);
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
   background-size: contain;
   background-repeat: no-repeat;
   background-image: url("../images/contacts_images/contacts-1_mb.png");
