@@ -38,91 +38,82 @@
           </svg>
         </a>
 
-        <button
-          type="button"
-          class="menu-buttom js-open-menu"
-          aria-expanded="false"
-          data-modal-open
-        >
+        <button type="button" class="menu-buttom js-open-menu" aria-expanded="false">
           <svg width="40" height="40" aria-label="Перемикач мобільного меню">
-            <use
-              class="menu-buttom__menu"
-              href="./images/icons/sprite-mobile.svg#icon-menu"
-            ></use>
+            <use class="menu-buttom__menu" href="./images/icons/sprite-mobile.svg#icon-menu"></use>
           </svg>
         </button>
 
-        <div class="backdrop is-hidden" data-modal>
-          <div class="menu-mobile js-menu-container" id="menu-mobile">
-            <div class="menu-mobile__container">
-              <div class="menu-mobile__wrapper">
-                <button
-                  type="button"
-                  class="menu-buttom-btn js-close-menu"
-                  aria-expanded="false"
-                  aria-controls="menu-mobile"
-                  data-modal-close
+        <!-- <div class="backdrop is-hidden" data-modal> -->
+        <div class="menu-mobile js-menu-container" id="menu-mobile">
+          <div class="menu-mobile__container">
+            <div class="menu-mobile__wrapper">
+              <button
+                type="button"
+                class="menu-buttom-btn js-close-menu"
+                aria-expanded="false"
+                aria-controls="menu-mobile"
+              >
+                <svg
+                  class="menu-buttom-btn__close"
+                  width="40"
+                  height="40"
+                  aria-label="Перемикач мобільного меню"
                 >
-                  <svg
-                    class="menu-buttom-btn__close"
-                    width="40"
-                    height="40"
-                    aria-label="Перемикач мобільного меню"
+                  <use href="./images/icons/sprite-mobile.svg#icon-menu-close"></use>
+                </svg>
+              </button>
+              <ul class="site-mobile list">
+                <li class="site-mobile__item">
+                  <a
+                    href="./index.html"
+                    class="site-mobile__link link list current site-mobile__studio"
+                    >About</a
                   >
-                    <use href="./images/icons/sprite-mobile.svg#icon-menu-close"></use>
-                  </svg>
-                </button>
-                <ul class="site-mobile list">
-                  <li class="site-mobile__item">
+                </li>
+                <li class="site-mobile__item">
+                  <a href="./index.html" class="site-mobile__link link list">Services and prices</a>
+                </li>
+                <li class="site-mobile__item">
+                  <a href="/index.html" class="site-mobile__link link list">Barbers</a>
+                </li>
+                <li class="site-mobile__item">
+                  <a href="/index.html" class="site-mobile__link link list">Contacts</a>
+                </li>
+              </ul>
+              <ul class="contacts-mobile list">
+                <li class="aside icon-smartphone">
+                  <a href="" class="link list">
+                    <span class="contacts-nav__tel">+38 044 111 11 11</span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="footer__list list">
+                <div>
+                  <li class="footer__item">
                     <a
-                      href="./index.html"
-                      class="site-mobile__link link list current site-mobile__studio"
-                      >About</a
+                      class="footer__link"
+                      href="https://Instagram.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Instagram</a
                     >
                   </li>
-                  <li class="site-mobile__item">
-                    <a href="./index.html" class="site-mobile__link link list">Services and prices</a>
+                  <li class="footer__item">
+                    <a
+                      class="footer__link"
+                      href="https://Youtube.com"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      >Youtube</a
+                    >
                   </li>
-                  <li class="site-mobile__item">
-                    <a href="/index.html" class="site-mobile__link link list">Barbers</a>
-                  </li>
-                  <li class="site-mobile__item">
-                    <a href="/index.html" class="site-mobile__link link list">Contacts</a>
-                  </li>
-                </ul>
-                <ul class="contacts-mobile list">
-                  <li class="aside icon-smartphone">
-                    <a href="" class="link list">
-                      <span class="contacts-nav__tel">+38 044 111 11 11</span>
-                    </a>
-                  </li>
-                </ul>
-                <ul class="footer__list list">
-                  <div>
-                    <li class="footer__item">
-                      <a
-                        class="footer__link"
-                        href="https://Instagram.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >Instagram</a
-                      >
-                    </li>
-                    <li class="footer__item">
-                      <a
-                        class="footer__link"
-                        href="https://Youtube.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >Youtube</a
-                      >
-                    </li>
-                  </div>
-                </ul>
-              </div>
+                </div>
+              </ul>
             </div>
           </div>
         </div>
+        <!-- </div> -->
 
         <nav class="navigation">
           <ul class="navigation__list list">
@@ -280,8 +271,8 @@
       </div>
     </header>
     <main>
-      <section class="hero section">
-        <div class="container">
+      <section class="hero">
+        <div class="container hero__container_overlay">
           <div class="hero__left-side">
             <ul class="hero__list list hero__socials-list">
               <li class="hero__item list">
@@ -312,13 +303,13 @@
             </p>
           </div>
           <div class="slider">
-            <ul class="slider__pagination">
+            <ul class="slider__pagination list">
               <li class="list">
                 <img src="./images/slider_images/Slider Navigation.png" alt="slider_navigation" />
               </li>
             </ul>
 
-            <ul class="hero__list slider__controls">
+            <ul class="hero__list slider__controls list">
               <li class="slider__item list">
                 <button class="slider__btn slider__btn-disabl" type="button">Back</button>
               </li>
@@ -1004,8 +995,6 @@
     </footer>
 
     <!-- Mobile menu -->
-
-
 
     <script src="./modal.js"></script>
     <script src="./mobile-menu.js"></script>

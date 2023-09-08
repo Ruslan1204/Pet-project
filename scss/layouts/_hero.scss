@@ -4,7 +4,7 @@
 ================================
 */
 
-.hero {
+.hero__container_overlay {
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
@@ -33,7 +33,7 @@
 
     height: 680px;
 
-    background-size: 584px 680px, contain;
+    background-size: 598px 680px, contain;
 
     @include mq(retina) {
       background-image: url('../images/hero_images/hero-tb@2x.jpg'),
@@ -57,6 +57,13 @@
 .hero .container {
   position: relative;
   display: flex;
+
+  padding-top: 272px;
+  padding-bottom: 237px;
+
+@include mq(desktop){
+  padding-bottom: 208px;
+}
 }
 
 .hero__left-side {
@@ -126,7 +133,6 @@
   margin-bottom: 20px;
   line-height: normal;
   text-transform: uppercase;
-  padding-top: 130px;
 
   color: var(--secondary-text_cl);
 
