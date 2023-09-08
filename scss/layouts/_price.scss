@@ -10,30 +10,30 @@
   margin-left: auto;
   margin-right: auto;
 
-  background-image: url(/images/price_imeges/price-1_mb.png),
+  background-image: url('../images/price_imeges/price-1_mb.png'),
     linear-gradient(to bottom, #111319, #111319);
 
   @include mq(retina) {
-    background-image: url(/images/price_imeges/price-2_mb@2x.png),
+    background-image: url('../images/price_imeges/price-2_mb@2x.png'),
       linear-gradient(to bottom, #111319, #111319);
   }
 
   @include mq(tablet) {
-    background-image: url(/images/price_imeges/price-1_tb.png),
+    background-image: url('../images/price_imeges/price-1_tb.png'),
       linear-gradient(to bottom, #111319, #111319);
 
     @include mq(retina) {
-      background-image: url(/images/price_imeges/price-2_tb@2x.png),
+      background-image: url('../images/price_imeges/price-2_tb@2x.png'),
         linear-gradient(to bottom, #111319, #111319);
     }
   }
 
   @include mq(desktop) {
-    background-image: url(/images/price_imeges/price-1_ds.png),
+    background-image: url('../images/price_imeges/price-1_ds.png'),
       linear-gradient(to bottom, #111319, #111319);
 
     @include mq(retina) {
-      background-image: url(/images/price_imeges/price-2_ds@2x.png),
+      background-image: url('../images/price_imeges/price-2_ds@2x.png'),
         linear-gradient(to bottom, #111319, #111319);
     }
   }

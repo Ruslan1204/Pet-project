@@ -1227,40 +1227,40 @@ img {
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(/images/price_imeges/price-1_mb.png), -webkit-gradient(linear, left top, left bottom, from(#111319), to(#111319));
-  background-image: url(/images/price_imeges/price-1_mb.png), linear-gradient(to bottom, #111319, #111319);
+  background-image: url("../images/price_imeges/price-1_mb.png"), -webkit-gradient(linear, left top, left bottom, from(#111319), to(#111319));
+  background-image: url("../images/price_imeges/price-1_mb.png"), linear-gradient(to bottom, #111319, #111319);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .price {
-    background-image: url(/images/price_imeges/price-2_mb@2x.png), -webkit-gradient(linear, left top, left bottom, from(#111319), to(#111319));
-    background-image: url(/images/price_imeges/price-2_mb@2x.png), linear-gradient(to bottom, #111319, #111319);
+    background-image: url("../images/price_imeges/price-2_mb@2x.png"), -webkit-gradient(linear, left top, left bottom, from(#111319), to(#111319));
+    background-image: url("../images/price_imeges/price-2_mb@2x.png"), linear-gradient(to bottom, #111319, #111319);
   }
 }
 @media screen and (min-width: 768px) {
   .price {
-    background-image: url(/images/price_imeges/price-1_tb.png), -webkit-gradient(linear, left top, left bottom, from(#111319), to(#111319));
-    background-image: url(/images/price_imeges/price-1_tb.png), linear-gradient(to bottom, #111319, #111319);
+    background-image: url("../images/price_imeges/price-1_tb.png"), -webkit-gradient(linear, left top, left bottom, from(#111319), to(#111319));
+    background-image: url("../images/price_imeges/price-1_tb.png"), linear-gradient(to bottom, #111319, #111319);
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .price {
-    background-image: url(/images/price_imeges/price-2_tb@2x.png), -webkit-gradient(linear, left top, left bottom, from(#111319), to(#111319));
-    background-image: url(/images/price_imeges/price-2_tb@2x.png), linear-gradient(to bottom, #111319, #111319);
+    background-image: url("../images/price_imeges/price-2_tb@2x.png"), -webkit-gradient(linear, left top, left bottom, from(#111319), to(#111319));
+    background-image: url("../images/price_imeges/price-2_tb@2x.png"), linear-gradient(to bottom, #111319, #111319);
   }
 }
 @media screen and (min-width: 1280px) {
   .price {
-    background-image: url(/images/price_imeges/price-1_ds.png), -webkit-gradient(linear, left top, left bottom, from(#111319), to(#111319));
-    background-image: url(/images/price_imeges/price-1_ds.png), linear-gradient(to bottom, #111319, #111319);
+    background-image: url("../images/price_imeges/price-1_ds.png"), -webkit-gradient(linear, left top, left bottom, from(#111319), to(#111319));
+    background-image: url("../images/price_imeges/price-1_ds.png"), linear-gradient(to bottom, #111319, #111319);
   }
 }
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .price {
-    background-image: url(/images/price_imeges/price-2_ds@2x.png), -webkit-gradient(linear, left top, left bottom, from(#111319), to(#111319));
-    background-image: url(/images/price_imeges/price-2_ds@2x.png), linear-gradient(to bottom, #111319, #111319);
+    background-image: url("../images/price_imeges/price-2_ds@2x.png"), -webkit-gradient(linear, left top, left bottom, from(#111319), to(#111319));
+    background-image: url("../images/price_imeges/price-2_ds@2x.png"), linear-gradient(to bottom, #111319, #111319);
   }
 }
 
@@ -1755,34 +1755,34 @@ img {
   background-color: var(--dark-bg-cl);
   background-size: contain;
   background-repeat: no-repeat;
-  background-image: url(/images/contacts_images/contacts-1_mb.png);
+  background-image: url("../images/contacts_images/contacts-1_mb.png");
   background-position: 50% bottom;
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .contacts {
-    background-image: url(/images/contacts_images/contacts-1_mb@2x.png);
+    background-image: url("../images/contacts_images/contacts-1_mb@2x.png");
   }
 }
 @media screen and (min-width: 768px) {
   .contacts {
-    background-image: url(/images/contacts_images/contacts-1_tb.png);
+    background-image: url("../images/contacts_images/contacts-1_tb.png");
   }
 }
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .contacts {
-    background-image: url(/images/contacts_images/contacts-1_tb@2x.png);
+    background-image: url("../images/contacts_images/contacts-1_tb@2x.png");
   }
 }
 @media screen and (min-width: 1280px) {
   .contacts {
     height: 634px;
-    background-image: url(/images/contacts_images/contacts-1_ds.png);
+    background-image: url("../images/contacts_images/contacts-1_ds.png");
     background-position: top left calc(50% + 390px);
   }
 }
 @media screen and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-resolution: 2dppx) {
   .contacts {
-    background-image: url(/images/contacts_images/contacts-1_ds@2x.png);
+    background-image: url("../images/contacts_images/contacts-1_ds@2x.png");
   }
 }
 
