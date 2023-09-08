@@ -33,9 +33,11 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
+  overflow-x: hidden;
   font-family: var(--main-font);
   font-size: 14px;
   line-height: 1.86; /* 185.714% */
@@ -919,7 +921,6 @@ img {
 ================================
 */
 .hero__container_overlay {
-  max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
   background-repeat: no-repeat;
@@ -1145,7 +1146,7 @@ img {
   }
 }
 @media screen and (min-width: 1280px) {
-  .about-list__item {
+  .about-list__item:not(:last-child) {
     margin-right: 30px;
   }
 }
@@ -1339,7 +1340,6 @@ img {
 }
 @media screen and (min-width: 768px) and (max-width: 1279.98px) {
   .price__list {
-    width: 702px;
     height: 444px;
   }
 }

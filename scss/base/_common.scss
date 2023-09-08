@@ -1,8 +1,12 @@
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  // width: 100%;
+  // max-width: 100%;
 }
 
 body {
+  overflow-x: hidden;
   font-family: var(--main-font);
   font-size: 14px;
   line-height: 1.86; /* 185.714% */
