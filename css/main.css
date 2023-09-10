@@ -638,7 +638,7 @@ img {
   position: fixed;
   top: 0;
   right: 0;
-  min-width: 337px;
+  min-width: 70%;
   height: 100vh;
   overflow: auto;
   z-index: 10;
