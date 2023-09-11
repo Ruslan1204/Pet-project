@@ -4,6 +4,10 @@
 ================================
 */
 
+// .about{
+//   position: relative;
+// }
+
 .about__container {
   @include mq(tablet) {
     display: flex;

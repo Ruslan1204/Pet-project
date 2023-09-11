@@ -23,6 +23,7 @@
     if (backdrop.style.display === 'none') {
       backdrop.style.display = '';
       mobileMenu.classList.remove('is-open');
+      // backdrop.removeEventListener('click', closeMenu);
     }
   }
 
@@ -34,7 +35,7 @@
   window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
     if (!e.matches) return;
     mobileMenu.classList.remove('is-open');
-    mobile.classList.remove('is-hidden');
+    // mobile.classList.remove('is-hidden');
     openMenuBtn.setAttribute('aria-expanded', false);
     bodyScrollLock.enableBodyScroll(document.body);
   });
